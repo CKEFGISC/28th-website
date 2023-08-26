@@ -1,0 +1,29 @@
+#intro > .jumbotron {
+	height: 80vh;
+	margin-bottom: 0px;
+	background-color: var(--color-dark);
+	background-image: url("/../public/images/homepage/cover.jpg");
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+#intro h1 {
+	font-size: 75px;
+	font-weight: 600;
+	color: var(--color-white);
+	margin: 14px 0px;
+	text-shadow: 0 0 10px var(--color-dark);
+}
+#intro h2 {
+	font-size: 22px;
+	font-weight: 400;
+	color: var(--color-white);
+}
+#intro .btn {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-weight: 500;
+	text-shadow: 0 0 3px var(--color-primary);
+	border-width: 2px;
+	border-radius: 30px;
+}

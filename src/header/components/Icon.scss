@@ -1,0 +1,34 @@
+.icon {
+	font-size: 1.4rem;
+	font-family: 'Space Mono', monospace;
+	padding: 0.2em 1em;
+	display: flex;
+	width: fit-content;
+	flex-direction: column;
+	align-items: center;
+	user-select: none;
+}
+
+.icon-image, .icon-text {
+	display: flex;
+	width: fit-content;
+	align-items: flex-end;
+}
+
+.icon-text > * {
+	display: inline-block;
+	transition: 500ms;
+	overflow-x: hidden;
+	white-space: nowrap;
+}
+.icon .hover-to-show, .icon:hover .hover-to-hide {
+	width: 0;
+	opacity: 0;
+}
+.icon:hover .hover-to-show, .icon .hover-to-hide {
+	width: 2.25em;
+	opacity: 1;
+}
+.icon:hover .hover-to-show.long {
+	width: 6.4em;
+}
