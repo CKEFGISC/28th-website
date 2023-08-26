@@ -1,0 +1,40 @@
+footer {
+  background: var(--color-lightgray);
+  padding: 2vh 8vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright, .footer-brands {
+  display: flex;
+  align-items: center;
+}
+
+.footer-brands > * {
+  margin-left: 16px;
+}
+
+.footer-brand-circle, .footer-brand-icon {
+  transition: 200ms ease;
+}
+
+.footer-brand-circle {
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--color-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-brand-circle:hover {
+  background: var(--color-dark);
+}
+
+.footer-brand-icon {
+  color: var(--color-dark);
+}
+
+:hover > .footer-brand-icon {
+  color: var(--color-white);
+}

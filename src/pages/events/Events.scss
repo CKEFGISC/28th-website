@@ -1,0 +1,128 @@
+#title h1 {
+  line-height: 80px;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+
+.events-page-section h3 {
+  margin: 44px 0px;
+  font-size: 30px;
+}
+
+.events-page-section .imgandtext {
+  position: relative;
+}
+
+.events-page-section img {
+  width: 320px;
+  border: #333333 solid 6px;
+  border-radius: 14px;
+  margin-bottom: 48px;
+}
+
+.events-page-section h4 {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  bottom: 56px;
+  left: 64px;
+  padding: 4px 14px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.events-page-section h5 {
+  font-size: 28px;
+  font-weight: 400;
+  transition: font-size 0.3s linear;
+}
+
+.events-page-section p {
+  font-size: 18px;
+}
+
+.events-page-section span {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 1399px) {
+  .events-page-section h4 {
+    left: 36px;
+  }
+
+  #planning h4 {
+    left: 36px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .events-page-section .col-md-4 {
+    margin-right: 40px;
+  }
+
+  #planning .col-md-4 {
+    margin-right: 40px;
+  }
+
+  .events-page-section h4 {
+    left: 24px;
+  }
+
+  #planning h4 {
+    left: 24px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .events-page-section img {
+    width: 252px;
+  }
+
+  .events-page-section p {
+    margin-bottom: 52px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .events-page-section img {
+    width: 420px;
+    margin-bottom: 16px;
+  }
+
+  .events-page-section p {
+    margin-bottom: 28%;
+  }
+
+  .events-page-section h4 {
+    left: 64px;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 536px) {
+  .events-page-section img {
+    width: 360px;
+  }
+
+  .events-page-section h4 {
+    left: 80px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .events-page-section h4 {
+    left: 56px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .events-page-section h4 {
+    left: 32px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .events-page-section h4 {
+    left: 12px;
+  }
+}

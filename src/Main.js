@@ -7,15 +7,14 @@ import Page from "./Page";
 import ErrorPage from "./PageError";
 
 import Home from "./pages/home/Home";
+import Events from "./pages/events/Events";
+import Courses from "./pages/courses/Courses";
 
-var pages = [
-  { path: "/", element: (<Page title="首頁"><Home /></Page>) }
-];
-
-for (let i in pages)
-  pages[i].errorElement = (<ErrorPage />);
-
-const router = createBrowserRouter(pages);
+const router = createBrowserRouter([
+  { path: "/",       element: (<Page title="首頁"><Home /></Page>), errorElement: (<ErrorPage />) },
+  { path: "/events", element: (<Page title="活動"><Events /></Page>) },
+  { path: "/courses", element: (<Page title="活動"><Courses /></Page>) }
+]);
 
 export default function Main() {
   return (
