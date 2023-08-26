@@ -6,9 +6,7 @@ export default function Map() {
   return (
     <section id="map">
       <div className="container">
-        <Row>
-          <SectionTitle>網站地圖</SectionTitle>
-        </Row>
+        <SectionTitle>網站地圖</SectionTitle>
         <Row>
           <Card 
             href="#about"

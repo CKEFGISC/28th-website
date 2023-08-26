@@ -1,13 +1,11 @@
-import Row from "../../../utils/Row";
+import SectionTitle from "../../../utils/SectionTitle";
 import Event from "../Template";
 
 export default function Alive() {
   return (
     <section id="alive" className="events-page-section">
       <div className="container">
-        <Row>
-          <div className="section-title col-md-8 offset-md-2 text-center"> <div>現存活動</div> </div>
-        </Row>
+        <SectionTitle>現存活動</SectionTitle>
         <Event
           imgSrc="/images/events/spring.jpg"
           imgText="2023 聯合春遊"

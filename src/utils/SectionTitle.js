@@ -1,7 +1,11 @@
+import Row from "./Row";
+
 export default function SectionTitle(props) {
   return (
-    <div className="section-title text-center"> 
-      <div>{props.children}</div> 
-    </div>
+    <Row>
+      <div className="section-title col-md-8 offset-md-2 text-center"> 
+        <div>{props.children}</div> 
+      </div>
+    </Row>
   );
 }

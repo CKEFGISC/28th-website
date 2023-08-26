@@ -84,6 +84,10 @@ $section-title-skew: 30;
   margin-bottom: 0.6em;
 }
 
+.text-paragraph p {
+  margin-bottom: 0.4em;
+}
+
 @for $i from 1 to 10 {
   .text-paragraph .tab-#{$i} {
       padding-left: #{$i}em;

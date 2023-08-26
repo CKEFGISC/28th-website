@@ -1,13 +1,11 @@
-import Row from "../../../utils/Row";
+import SectionTitle from "../../../utils/SectionTitle";
 import Event from "../Template";
 
 export default function Planning() {
   return (
     <section id="planning" className="events-page-section">
       <div className="container">
-        <Row>
-          <div className="section-title col-md-8 offset-md-2 text-center"> <div>不定期與暫緩中活動</div> </div>
-        </Row>
+        <SectionTitle>不定期與暫緩中活動</SectionTitle>
         <Event
           imgSrc="..."
           imgText="2023 聯合幹訓"
