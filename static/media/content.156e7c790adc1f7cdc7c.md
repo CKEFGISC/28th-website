@@ -30,7 +30,7 @@
 
 喔 也不支援 Spoiler 欸
 
-> 突出！
+> 突出失敗了！
 
 圖片：
 
@@ -53,4 +53,13 @@ int main() {
   std::cout << "Hello world!";
 }
 ```
+
+---
+
+|Name |Quantity|
+|-----|--------|
+|Apple|3       |
+|Egg  |12      |
+
+表格也不能用……
 
