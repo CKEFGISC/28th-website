@@ -38,6 +38,7 @@ body, #root {
 
 .main-wrapper {
   flex-grow: 1;
+  overflow-x: hidden;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;

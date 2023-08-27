@@ -1,0 +1,141 @@
+// Switcher
+
+.team-toggle-switch span span {
+	display: none;
+}
+  
+.team-toggle-switch {
+  user-select: none;
+	display: inline-block;
+	height: 18px;
+	position: relative;
+	overflow: visible;
+	padding: 0;
+	cursor: pointer;
+	width: 200px;
+	border: 1px solid var(--color-lightgray);
+	border-radius:5px;
+	height:34px;
+}
+.team-toggle-switch * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.team-toggle-switch label,
+.team-toggle-switch > span {
+	line-height: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+.team-toggle-switch input:focus ~ .switch-rect,
+.team-toggle-switch input:focus + label {
+	outline: none;
+}
+.team-toggle-switch label {
+	position: relative;
+	z-index: 3;
+	display: block;
+	width: 100%;
+}
+.team-toggle-switch input {
+	position: absolute;
+	opacity: 0;
+	z-index: 5;
+}
+.team-toggle-switch > span {
+	position: absolute;
+	left: 0;
+	width: calc(100% - 6px);
+	margin: 0;
+	text-align: left;
+	white-space: nowrap;
+  margin:0 3px;
+}
+.team-toggle-switch > span span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	display: block;
+	width: 50%;
+	margin-left: 50px;
+	text-align: left;
+	font-size: 0.9em;
+	width: auto;
+	left: 0;
+	top: -1px;
+	opacity: 1;
+	width:40%;
+	text-align: center;
+  line-height:34px;
+}
+.team-toggle-switch .switch-rect {
+	position: absolute;
+	right: 50%;
+	z-index: 4;
+	display: block;
+	top: 3px;
+	bottom: 3px;
+	padding: 0;
+	left: 3px;
+	width: 50%;
+	background-color: var(--color-lightgray);
+	border-radius: 4px;
+	transition: left 200ms ease-out;
+}
+.team-toggle-switch > span span:first-of-type {
+	opacity: 1;
+	left: 0;
+	margin: 0;
+  width: 50%;
+}
+.team-toggle-switch > span span:last-of-type {
+	left:auto;
+	right:0;
+	margin: 0;
+  width: 50%;
+}
+.team-toggle-switch > span:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: -2px;
+	border-radius: 30px;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+
+.team-toggle-switch input:checked ~ .switch-rect {
+	left: calc(50% - 3px);
+}
+.team-toggle-switch input:checked ~ span span:first-of-type {
+	left:0;
+}
+
+// End Switcher. Source: https://codepen.io/hiralnv/pen/wvMmLev
+
+.team-section-anchor {
+  width: 200%;
+  height: max-content;
+  overflow-x: visible;
+  position: relative;
+  display: flex;
+}
+
+.team-section-anchor > section {
+  width: 50%;
+  transition: transform 500ms ease;
+}
+
+.team-section-anchor > .shift-left {
+  transform: translateX(-100%);
+}
+
+.team-section-anchor > section img {
+  object-fit: cover;
+}

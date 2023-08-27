@@ -18,11 +18,12 @@ export default function Header() {
             <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul className="navbar-nav">
                 <NavLink href="#/news">公告</NavLink>
-                <NavLink href="#/courses">課程介紹</NavLink>
-                <NavLink href="#/events">活動介紹</NavLink>
-                <NavLink href="https://iscoj.fg.tp.edu.tw/" 
+                <NavLink href="#/team">幹部</NavLink>
+                <NavLink href="#/courses">課程</NavLink>
+                <NavLink href="#/events">活動</NavLink>
+                <NavLink href="#/museum">博物館</NavLink>
+                <NavLink href="https://iscoj.fg.tp.edu.tw/"
                   target="_blank" rel="noreferrer">ISCOJ</NavLink>
-                <NavLink href="#/museum">歷屆博物館</NavLink>
               </ul>
             </div>
           </div>

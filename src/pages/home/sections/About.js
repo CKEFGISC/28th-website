@@ -4,7 +4,7 @@ import rehypeRaw from "rehype-raw";
 import ReactMarkdown from "react-markdown";
 import SectionTitle from "../../../utils/SectionTitle";
 
-import contentPath from "./About.md";
+import contentPath from "./about.md";
 import Loading from "../../../utils/Loading";
 
 export default function About() {
