@@ -1,7 +1,7 @@
 import ReactMarkdown from "react-markdown";
 
 export default function Courses() {
-  const markdown = [
+  const content = [
     "我不知道這裡要放什麼",
     "",
     "── 晴"
@@ -12,7 +12,7 @@ export default function Courses() {
       課程介紹
     </section>
     <div className="container py-5">
-      <ReactMarkdown children={markdown}></ReactMarkdown>
+      <ReactMarkdown children={content}></ReactMarkdown>
     </div>
   </>);
 }

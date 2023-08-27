@@ -2,9 +2,6 @@
 	margin-bottom: 2em;
 }
 
-#map .card {
-	height: 100%;
-}
 #map .card h5 {
 	font-size: 24px;
 }
@@ -13,4 +10,15 @@
 }
 #map .card .btn {
 	font-weight: 600;
+}
+
+#map .card {
+	height: 100%;
+}
+#map .card .card-text {
+	margin-bottom: 60px;
+}
+#map .card .btn {
+	position: absolute;
+	bottom: 20px;
 }
