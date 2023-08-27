@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import "./index.scss";
 
 import Header from "./header/Header";
-import Main   from "./Main";
+import Main from "./Main";
 import Footer from "./footer/Footer";
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
@@ -18,6 +18,6 @@ root.render(
       </div>
 
       <Footer />
-  </div>
+    </div>
   </React.StrictMode>
 );
