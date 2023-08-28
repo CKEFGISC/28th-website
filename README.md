@@ -2,7 +2,7 @@
 
 ckefgisc-28th.github.io / 28th.ckefgisc.org
 
-Made by 建北電資 28th 社網製作團隊晴
+Made by 建北電資 28th 社網製作團隊
 
 ---
 
