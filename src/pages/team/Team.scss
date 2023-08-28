@@ -142,6 +142,14 @@
   object-fit: cover;
 }
 
+.person .hover-to-show {
+	opacity: 0;
+	transition: opacity 200ms ease;
+}
+.person .hover-to-show:hover {
+	opacity: 1;
+}
+
 .person .description { 
 	margin-left: 20px; 
 	max-width: 50vw;

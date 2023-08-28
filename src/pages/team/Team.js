@@ -8,6 +8,12 @@ function Up(props) {
   return (<sup><small>{props.children}</small></sup>)
 }
 
+function TeamContainer(props) {
+  return (
+    <div className="container d-flex flex-column align-items-center">{props.children}</div>
+  );
+}
+
 export default function Team() {
   function setAnchorHeightBy(selector) {
     let anchorElement = document.querySelector(".team-section-anchor");
@@ -45,6 +51,8 @@ export default function Team() {
     window.addEventListener("resize", onSwitch);
   }
 
+  
+
   return (<>
     <section id="title-bar">
       幹部介紹
@@ -63,13 +71,14 @@ export default function Team() {
     </section>
     <div className="team-section-anchor" onLoad={onAnchorAppear}>
       <section id="team-ckeisc">
-        <div className="container d-flex flex-column align-items-center">
+        <TeamContainer>
           <Person
             role="社長"
             name="水獺"
             tags="會考 36 分大電神, 吉他人, 真心話大冒險追到女友"
             description={Placeholder()}
             imgSrc="/images/team/ckeisc/water_lai.png"
+            imgSrc2="/images/team/ckeisc/water_lai_2.png"
           />
           <Person
             role="副社長"
@@ -98,6 +107,7 @@ export default function Team() {
             tags="免修仔, 新竹競走代表隊, 團購訂單"
             description={Placeholder()}
             imgSrc="/images/team/ckeisc/little_tsai.png"
+            imgSrc2="/images/team/ckeisc/little_tsai_2.png"
           />
           <Person
             role="學術"
@@ -105,6 +115,7 @@ export default function Team() {
             tags="甲甲, 米哈遊, 雲玩家"
             description={Placeholder()}
             imgSrc="/images/team/ckeisc/yo_yo.png"
+            imgSrc2="/images/team/ckeisc/yo_yo_2.png"
           />
           <Person
             role="學術"
@@ -133,6 +144,7 @@ export default function Team() {
             tags="晴鏡之好, 表符狂人, 我哪有差, JavaScript, 用 2000 行 C++ 輸出 Hello World, Rickroll 專家"
             description={Placeholder()}
             imgSrc="/images/team/ckeisc/star_huey.png"
+            imgSrc2="/images/team/ckeisc/star_huey_2.png"
           />
           <Person
             role="網管"
@@ -183,10 +195,10 @@ export default function Team() {
             description={Placeholder()}
             imgSrc="/images/team/ckeisc/j_mo.png"
           />
-        </div>
+        </TeamContainer>
       </section>
       <section id="team-fgisc">
-        <div className="container">
+        <TeamContainer>
           <Person
             role="社長"
             name="鈉粒"
@@ -264,7 +276,7 @@ export default function Team() {
             description={Placeholder()}
             imgSrc="/images/team/fgisc/group_primis.png"
           />
-        </div>
+        </TeamContainer>
       </section>
     </div>
   </>);

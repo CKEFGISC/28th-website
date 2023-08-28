@@ -21,7 +21,7 @@ export default function Header() {
                 <NavLink href="#/team">幹部</NavLink>
                 <NavLink href="#/courses">課程</NavLink>
                 <NavLink href="#/events">活動</NavLink>
-                <NavLink href="#/museum">博物館</NavLink>
+                <NavLink href="#/museum">歷屆</NavLink>
                 <NavLink href="https://iscoj.fg.tp.edu.tw/"
                   target="_blank" rel="noreferrer">ISCOJ</NavLink>
               </ul>

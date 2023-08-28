@@ -14,18 +14,29 @@ function Tag(props) {
 }
 
 export default function Person(props) {
-  let { imgSrc, role, name, tags, description } = props;
+  let { imgSrc, imgSrc2, role, name, tags, description } = props;
   tags = tags.split(/,/g).map((t, i) => t.trim());
 
   return (
-    <div className="person d-flex mb-5">
+    <div className="person d-flex mb-5 position-relative">
       <img 
         src={imgSrc} 
         alt={name} 
         width="250"
         height="250"
-        style={{ borderRadius: "20px", flexShrink: 0 }} 
+        style={{ borderRadius: "20px", flexShrink: 0 }}
       />
+
+      {imgSrc2 && <img 
+        src={imgSrc2}
+        className="hover-to-show"
+        alt=""
+        width="250"
+        height="250"
+        style={{ borderRadius: "20px", flexShrink: 0, position: "absolute" }}
+      />}
+
+
       <span className="description">
         <h4 style={{ marginBottom: "0.5rem" }}>{role}&nbsp;─&nbsp;</h4>
         <h2 style={{ marginBottom: "1rem", marginLeft: "30px" }}>{name}</h2>
