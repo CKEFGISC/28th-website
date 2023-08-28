@@ -142,8 +142,28 @@
   object-fit: cover;
 }
 
-// .no-height * {
-// 	position: absolute;
-// 	transition-delay: 500ms;
-// 	overflow: hidden;
-// }
+.person .description { 
+	margin-left: 20px; 
+	max-width: 50vw;
+}
+
+@media (max-width: 992px) {
+  .person {
+		flex-direction: column !important;
+		align-items: center;
+	}
+
+  .person > img {
+    width: 500px;
+    height: 500px;
+		max-width: 80dvw;
+		max-height: 80dvw;
+  }
+
+  .person > .description {
+    width: 500px;
+		max-width: 80dvw;
+    margin-left: 0 !important;
+    margin-top: 20px;
+  }
+}

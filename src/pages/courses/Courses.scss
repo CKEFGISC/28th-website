@@ -1,0 +1,19 @@
+.course p {
+  margin-bottom: 0.6rem;
+}
+
+@media (max-width: 992px) {
+  .course {
+    flex-direction: column !important;
+  }
+
+  .course > .slides {
+    width: 600px;
+    height: 420px;
+  }
+
+  .course > .description {
+    margin-left: 0 !important;
+    margin-top: 20px;
+  }
+}

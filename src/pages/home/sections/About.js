@@ -1,11 +1,13 @@
 import React from "react";
 import rehypeRaw from "rehype-raw";
-
 import ReactMarkdown from "react-markdown";
+
+import "./About.scss";
+
 import SectionTitle from "../../../utils/SectionTitle";
+import Loading from "../../../utils/Loading";
 
 import contentPath from "./about.md";
-import Loading from "../../../utils/Loading";
 
 export default function About() {
   const [ text, setText ] = React.useState();

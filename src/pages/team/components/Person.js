@@ -26,7 +26,7 @@ export default function Person(props) {
         height="250"
         style={{ borderRadius: "20px", flexShrink: 0 }} 
       />
-      <span style={{ marginLeft: "20px", maxWidth: "50vw" }}>
+      <span className="description">
         <h4 style={{ marginBottom: "0.5rem" }}>{role}&nbsp;─&nbsp;</h4>
         <h2 style={{ marginBottom: "1rem", marginLeft: "30px" }}>{name}</h2>
 

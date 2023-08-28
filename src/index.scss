@@ -1,3 +1,9 @@
+// config
+
+$page-scroll-mode: scroll;
+//? scroll : always show scrollbar
+//? auto   : show scollbar when necessary
+
 // revamp
 * {
   box-sizing: border-box;
@@ -18,7 +24,12 @@
   background: var(--color-selection);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -27,9 +38,10 @@ a {
   text-decoration: none;
 }
 
-body, #root {
-  width: 100vw;
-  height: 100vh;
+body,
+#root {
+  width: 100dvw;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   background: var(--color-white);
@@ -39,7 +51,7 @@ body, #root {
 .main-wrapper {
   flex-grow: 1;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: #{$page-scroll-mode};
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth !important;
@@ -60,6 +72,7 @@ body, #root {
 }
 
 $section-title-skew: 30;
+
 .section-title {
   display: flex;
   margin: 1.6em auto;
@@ -71,7 +84,8 @@ $section-title-skew: 30;
   align-items: center;
   background: var(--color-primary);
 }
-.section-title > * {
+
+.section-title>* {
   margin: auto 0.5em;
   transform: skewX(#{$section-title-skew}deg);
 }
@@ -80,6 +94,16 @@ $section-title-skew: 30;
   padding: 2em 3em;
   border-radius: 10px;
   background: var(--color-white-soft);
+}
+
+@media (max-width: 768px) {
+  .text-paragraph {
+    padding: 20px 10px;
+  }
+
+  .text-paragraph ul {
+    padding-left: 20px;
+  }
 }
 
 .text-paragraph h3 {
@@ -92,8 +116,15 @@ $section-title-skew: 30;
 
 @for $i from 1 to 10 {
   .text-paragraph .tab-#{$i} {
-      padding-left: #{$i}em;
-      padding-right: #{$i}em;
+    padding-left: #{$i}em;
+    padding-right: #{$i}em;
+  }
+
+  @media (max-width: 768px) {
+    .text-paragraph .tab-#{$i} {
+      padding-left: #{$i * 2}px;
+      padding-right: #{$i * 2}px;
+    }
   }
 }
 
@@ -108,39 +139,41 @@ $section-title-skew: 30;
 }
 
 // scrollbar
-.scrollbar {
-  overflow-y: scroll;
-}
-
-.scrollbar::-webkit-scrollbar {
-  width: 1em;
-}
-
-.scrollbar::-webkit-scrollbar:has(.scrollbar-hover-section:hover) {
-  display: block;
-}
-
-.scrollbar::-webkit-scrollbar-track {
-  border-radius: 1em;
-  opacity: 0;
-}
-
-.scrollbar::-webkit-scrollbar-thumb {
-  background-color: var(--color-lightgray);
-  background-clip: padding-box;
-  border: 3px solid transparent;
-  border-radius: 100vw;
-  min-height: 3em;
-}
-
-.thin-scrollbar {
-  @extend .scrollbar;
-}
-
-.thin-scrollbar::-webkit-scrollbar {
-  width: .6em;
-}
-
-.thin-scrollbar::-webkit-scrollbar-track {
-  border-radius: .6em;
+@media (min-width: 768px) {
+  .scrollbar {
+    overflow-y: scroll;
+  }
+  
+  .scrollbar::-webkit-scrollbar {
+    width: 1em;
+  }
+  
+  .scrollbar::-webkit-scrollbar:has(.scrollbar-hover-section:hover) {
+    display: block;
+  }
+  
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 1em;
+    opacity: 0;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--color-lightgray);
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    border-radius: 100vw;
+    min-height: 3em;
+  }
+  
+  .thin-scrollbar {
+    @extend .scrollbar;
+  }
+  
+  .thin-scrollbar::-webkit-scrollbar {
+    width: .6em;
+  }
+  
+  .thin-scrollbar::-webkit-scrollbar-track {
+    border-radius: .6em;
+  }
 }

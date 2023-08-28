@@ -1,0 +1,10 @@
+@media (max-width: 992px) {
+  .chicken-container {
+    flex-direction: column !important;
+  }
+
+  .chicken-container img {
+    width: 400px !important;
+    max-width: 70vw;
+  }
+}

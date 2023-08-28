@@ -27,3 +27,16 @@
 	border-width: 2px;
 	border-radius: 30px;
 }
+
+@media (max-width: 768px) {
+  #intro > .jumbotron {
+		height: calc(20vh + 40vw);
+	}
+
+	#intro h1 {
+		font-size: 65px;
+	}
+	#intro h2 {
+		font-size: 16px;
+	}
+}

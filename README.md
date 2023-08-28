@@ -25,6 +25,8 @@ Made by 建北電資 28th 社網製作團隊
 
 ## 給開發者
 
-1. 此專案是由 React 架設，如果你不會用可以去問晴
-2. 公告存在 `src\pages\news\content.md`，每則以`<%-== next ==-%>` 分隔，第一行得要是 `# 標題` 才能顯示在清單中 
-3. 如果你比較懶，直接把你想加的東西丟給晴，他會幫你處理
+請參考 `docs/` 
+
+## 傳承
+
+請參考[傳承文件](https://hackmd.io/@ckefgisc-28th/club-website)

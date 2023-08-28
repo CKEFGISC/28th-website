@@ -3,8 +3,7 @@ import {
   RouterProvider
 } from "react-router-dom";
 
-import Page from "./Page";
-import ErrorPage from "./ErrorPage";
+import Page, { ErrorPage } from "./Page";
 
 import Home from "./pages/home/Home";
 import Events from "./pages/events/Events";

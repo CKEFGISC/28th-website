@@ -3,6 +3,19 @@ footer {
   padding: 2vh 8vh;
   display: flex;
   justify-content: space-between;
+  bottom: env(safe-area-inset-bottom);
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 2vh 10px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer > * {
+    margin: 10px auto;
+  }
 }
 
 .footer-copyright, .footer-brands {

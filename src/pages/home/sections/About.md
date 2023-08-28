@@ -15,8 +15,8 @@
 
 - #### 吉祥物
 
-    <div class="d-flex">
-      <img src="/images/chicken.png" style="width: 230px;" alt="Chicken" />
+    <div class="chicken-container d-flex">
+      <img src="/images/chicken.png" style="width: 230px; flex-shrink: 0;" alt="Chicken" />
       <span>
       北資的吉祥物，後經建電學長發揚光大後，成為建北電資的吉祥物，
       會出現在宣幹卡片上的可愛小雞。

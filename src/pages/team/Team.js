@@ -31,7 +31,8 @@ export default function Team() {
     let forceClass = (selector, className, exist) => 
       setClass(selector, exist ? "add" : "remove", className);
 
-    let isFgisc = document.querySelector("input#is-fgisc").checked;
+    let isFgisc = document.querySelector("input#is-fgisc")?.checked ?? null;
+    if (isFgisc == null) return;
 
     forceClass("#team-ckeisc, #team-fgisc", "shift-left", isFgisc);
     // forceClass("#team-ckeisc", "no-height", isFgisc);
@@ -129,7 +130,7 @@ export default function Team() {
           <Person
             role="學術 & 網管"
             name="晴"
-            tags="晴鏡之好, 表符狂人, 我哪有差, JavaScript, 2000 行 C++, Rickroll 專家"
+            tags="晴鏡之好, 表符狂人, 我哪有差, JavaScript, 用 2000 行 C++ 輸出 Hello World, Rickroll 專家"
             description={Placeholder()}
             imgSrc="/images/team/ckeisc/star_huey.png"
           />
@@ -203,7 +204,7 @@ export default function Team() {
           <Person
             role="學術長"
             name="企鵝"
-            tags="企鵝為甚麼不會飛, python大師, 超級冷靜"
+            tags="企鵝為什麼不會飛, python大師, 超級冷靜"
             description={Placeholder()}
             imgSrc="/images/team/fgisc/chi_goose.png"
           />
