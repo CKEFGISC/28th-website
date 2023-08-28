@@ -6,7 +6,7 @@ import Planning from "./sections/Planning";
 export default function Events() {
   return (<>
     <section id="title-bar">
-      活動與資源
+      活動介紹
     </section>
     <Alive />
     <Planning />
