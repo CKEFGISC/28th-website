@@ -7,15 +7,18 @@ function Tag(props) {
     <span style={{
       background: "var(--color-white-soft)",
       padding: "2px",
-      borderRadius: "3px"
+      borderRadius: "3px",
+      display: "inline-block"
     }}>#{props.children}</span>
   );
 }
 
 export default function Person(props) {
   let { imgSrc, role, name, tags, description } = props;
+  tags = tags.split(/,/g).map((t, i) => t.trim());
+
   return (
-    <div className="person d-flex">
+    <div className="person d-flex mb-5">
       <img 
         src={imgSrc} 
         alt={name} 

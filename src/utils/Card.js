@@ -1,17 +1,31 @@
-export default function Card(props) {
+import Scroll from "../utils/Scroll";
+
+function InnerCard(props) {
   var buttonClassNames = `btn btn-${props.btnColor || "primary"}`;
   return (
+    <div className="card">
+      <img src={props.imgSrc} className="card-img-top" alt="" />
+      <div className="card-body">
+        <h5 className="card-title">{props.title}</h5>
+        <p className="card-text">{props.description}</p>
+        <span className={buttonClassNames}>點此查看</span>
+      </div>
+    </div>
+  );
+}
+
+export default function Card(props) {
+  return (
     <div className="col-md-3">
-      <a href={props.href}>
-        <div className="card">
-          <img src={props.imgSrc} className="card-img-top" alt="" />
-          <div className="card-body">
-            <h5 className="card-title">{props.title}</h5>
-            <p className="card-text">{props.description}</p>
-            <span className={buttonClassNames}>點此查看</span>
-          </div>
-        </div>
-      </a>
+      {props.useScroll ? (
+        <Scroll to={props.to}>
+          <InnerCard {...props} />
+        </Scroll>
+      ) : (
+        <a href={props.href}>
+          <InnerCard {...props} />
+        </a>
+      )}
     </div>
   );
 }

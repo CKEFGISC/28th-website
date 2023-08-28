@@ -11,7 +11,7 @@ export default function Map() {
         <SectionTitle>網站地圖</SectionTitle>
         <Row>
           <Card 
-            href="#about"
+            useScroll to="#about"
             imgSrc="/images/homepage/about.jpg"
             title="關於我們"
             description="＂關於社團與這個網站的介紹＂"

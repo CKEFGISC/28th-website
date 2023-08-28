@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# 建北電資 28th 社網
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ckefgisc-28th.github.io / 28th.ckefgisc.org
 
-## Available Scripts
+Made by 建北電資 28th 社網製作團隊晴
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 緣起
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+建北電資以往皆有架設網站作為招生及宣傳用途。但是自從建電社辦的伺服器被學校沒收之後，一直以來都找不到一個良好的網站架設環境，也沒有一個地方讓學術們統一放置教材供學弟妹使用
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+因此，在一三接幹了之後，一二學術長檸檬便一直希望繼任的鹽亞倫可以將他們沒有做出的社網完成。因此，鹽亞倫便找了溫室菜以及北資學術長嗯嗯，嘗試從頭寫出一個網站，並且透過 Github Pages 進行架設
 
-### `npm test`
+接著一三也退休了，一四的幹部上任，晴以為自己很厲害，於是想再從頭寫社網。不過他後來便發現這是一個很笨的決定，因為寫一個完整的網頁，又沒有後端，實在太難了。於是他便一直耽擱著沒有去寫社網，即使一四社長水獺 & 網管六哥每天都說：「去寫社網！！！」
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+直到某一天，晴發現有一個好用東西叫做 React，甚至是 Meta 公司開發的。它的架構良好，很多東西可以做成模版，甚至還有優化，實在是太讚了。花了一整天學完 React 的基本操作以後，把原本社網的東西搬過來補一補，就是現在社網的樣子啦！
 
-### `npm run build`
+## 製作團隊
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+專案管理：建電一四 學術 & 網管 · 晴 [@LilyKensa](https://www.github.com/LilyKensa)  
+網頁設計：建電一四 網管 · 六哥 *[@Unknown]()*
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 給開發者
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. 此專案是由 React 架設，如果你不會用可以去問晴
+2. 公告存在 `src\pages\news\content.md`，每則以`<%-== next ==-%>` 分隔，第一行得要是 `# 標題` 才能顯示在清單中 
+3. 如果你比較懶，直接把你想加的東西丟給晴，他會幫你處理

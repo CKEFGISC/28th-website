@@ -122,14 +122,16 @@
 .team-section-anchor {
   width: 200%;
   height: max-content;
-  overflow-x: visible;
+  overflow: hidden;
   position: relative;
   display: flex;
+	transition: height 500ms ease;
 }
 
 .team-section-anchor > section {
   width: 50%;
-  transition: transform 500ms ease;
+	height: fit-content;
+  transition: all 500ms ease;
 }
 
 .team-section-anchor > .shift-left {
@@ -139,3 +141,9 @@
 .team-section-anchor > section img {
   object-fit: cover;
 }
+
+// .no-height * {
+// 	position: absolute;
+// 	transition-delay: 500ms;
+// 	overflow: hidden;
+// }
