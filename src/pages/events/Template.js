@@ -1,8 +1,6 @@
-import Row from "../../utils/Row"
-
 export default function Event(props) {
   return (
-    <Row>
+    <div className="row fade-in hiding">
       <div className="col-md-4 offset-md-1 text-center">
         <div className="imgandtext">
           <img src={props.imgSrc} alt="" />
@@ -14,6 +12,6 @@ export default function Event(props) {
         <span>舉辦時間：{props.time}</span>
         <p>{props.description}</p>
       </div>
-    </Row>
+    </div>
   );
 }

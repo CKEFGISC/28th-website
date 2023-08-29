@@ -18,7 +18,7 @@ export default function Person(props) {
   tags = tags.split(/,/g).map((t, i) => t.trim());
 
   return (
-    <div className="person d-flex mb-5 position-relative">
+    <div className="person d-flex mb-5 position-relative fade-in hiding">
       <img 
         src={imgSrc} 
         alt={name} 

@@ -1,9 +1,11 @@
 import SectionTitle from "../../../utils/SectionTitle";
 import Event from "../Template";
 
+import { handleFadeIn } from "../../../utils/Page";
+
 export default function Planning() {
   return (
-    <section id="planning" className="events-page-section">
+    <section id="planning" className="events-page-section" onLoad={handleFadeIn}>
       <div className="container">
         <SectionTitle>不定期與暫緩中活動</SectionTitle>
         <Event

@@ -21,5 +21,5 @@ export default function Courses() {
     return (<></>);
   }
 
-  return (<CourseIndividual index={index} />);
+  return (<CourseIndividual index={index} view={view} />);
 }

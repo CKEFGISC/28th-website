@@ -3,7 +3,6 @@ import {
   createHashRouter,
   RouterProvider
 } from "react-router-dom";
-import $ from "jquery";
 
 import Page, { ErrorPage } from "./utils/Page";
 
@@ -24,10 +23,6 @@ const router = createHashRouter([
 ]);
 
 export default function Main() {
-  React.useEffect(() => {
-    $(".main-wrapper")[0].scrollTo({ top: 0, behavior: "instant" });
-  });
-
   return (
     <RouterProvider router={router} />
   );

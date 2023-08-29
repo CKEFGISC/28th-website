@@ -184,68 +184,66 @@ $section-title-skew: 30;
 // fade-in animation
 @keyframes firstSlide {
   0% {
-    -webkit-transform: translateY(1200px);
-    transform: translateY(1200px)
+    transform: translateY(1200px);
   }
 
   20% {
-    -webkit-transform: translateY(80px);
-    transform: translateY(80px)
+    transform: translateY(80px);
   }
 
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0)
+    transform: translateY(0);
   }
 }
 
 @keyframes firstFade {
   0% {
-    opacity: 0
+    opacity: 0;
   }
 
   20% {
-    opacity: 0
+    opacity: 0;
   }
 
   100% {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 @keyframes mainSlide {
   0% {
-      -webkit-transform: translate3d(0, 1200px, 0);
-      transform: translate3d(0, 1200px, 0)
+      transform: translate3d(0, 1200px, 0);
   }
 
   20% {
-      -webkit-transform: translate3d(0, 120px, 0);
-      transform: translate3d(0, 120px, 0)
+      transform: translate3d(0, 120px, 0);
   }
 
   100% {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0)
+      transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes mainFade {
   0% {
-      opacity: 0
+      opacity: 0;
   }
 
   40% {
-      opacity: 0
+      opacity: 0;
   }
 
   100% {
-      opacity: 1
+      opacity: 1;
   }
 }
 
 header {
   animation: mainFade 0.75s;
+}
+
+footer {
+  animation: mainFade 1.25s;
 }
 
 .page-content-wrapper > section:is(:first-child) {
@@ -254,4 +252,12 @@ header {
 
 section:not(.page-content-wrapper > section:is(:first-child)) {
   animation: mainSlide 0.75s, mainFade 1s;
+}
+
+.fade-in.hiding {
+	opacity: 0;
+}
+
+.fade-in:not(.hiding) {
+  animation: firstSlide 0.75s, firstFade 0.75s;
 }

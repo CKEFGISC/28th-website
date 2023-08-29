@@ -7,6 +7,8 @@ import CourseIntro from "../components/CourseIntro";
 
 import shortDescriptionPath from "../descriptions/short.md";
 
+import { handleFadeIn } from "../../../utils/Page";
+
 export default function CourseList() {
   const [ text, setText ] = React.useState();
 
@@ -20,7 +22,7 @@ export default function CourseList() {
     <section id="title-bar">
       課程介紹
     </section>
-    <section id="courses">
+    <section id="courses" onLoad={handleFadeIn}>
       <SectionTitle>112 上</SectionTitle>
       <div className="container py-1">
         {text ? (<>

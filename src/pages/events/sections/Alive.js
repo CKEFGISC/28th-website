@@ -1,9 +1,11 @@
 import SectionTitle from "../../../utils/SectionTitle";
 import Event from "../Template";
 
+import { handleFadeIn } from "../../../utils/Page";
+
 export default function Alive() {
   return (
-    <section id="alive" className="events-page-section">
+    <section id="alive" className="events-page-section" onLoad={handleFadeIn}>
       <div className="container">
         <SectionTitle>現存活動</SectionTitle>
         <Event

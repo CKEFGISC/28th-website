@@ -1,11 +1,43 @@
-import { useEffect } from "react";
+import React from "react";
 import { useRouteError } from "react-router-dom";
+import $ from "jquery";
+
+export function handleFadeIn() {
+  $(".fade-in.hiding").each((i, element) => {
+    var object = $(element);
+    var windowObject = $(".main-wrapper");
+
+    if (object.position().top + object.outerHeight() * 0.5
+      < windowObject.scrollTop() + windowObject.height()
+      && !object.parents("*").hasClass("inactive")) {
+      object.removeClass("hiding");
+    }
+  });
+}
 
 export default function Page(props) {
-  useEffect(() => {
+  React.useEffect(() => {
     document.title = `${props.title} | 建北電資 28th` || "";
-  }, [ props.title ]);
 
+    $(".main-wrapper")[0].scrollTo({ top: 0, behavior: "instant" });
+
+    var footerElement = $("footer")[0];
+    footerElement.style.animation = "none";
+    window.requestAnimationFrame((time) => {
+      window.requestAnimationFrame((time) => {
+        footerElement.style.animation = null;
+      });
+    });
+
+    // for mobile
+    $(".main-wrapper").on("scroll", handleFadeIn);
+    handleFadeIn();
+    // for pc
+    window.addEventListener("load", () => {
+      $(".main-wrapper").on("scroll", handleFadeIn);
+      handleFadeIn();
+    });
+  }, [ props.title ]);
   return props.children;
 };
 

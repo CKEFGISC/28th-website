@@ -2,7 +2,7 @@ import ReactMarkdown from "react-markdown";
 
 export default function CourseIntro(props) {
   return (
-    <div className="d-flex course mb-5">
+    <div className="d-flex course mb-5 fade-in hiding">
       <img
         src={props.imgSrc}
         alt={props.title}
