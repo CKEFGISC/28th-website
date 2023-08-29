@@ -146,20 +146,20 @@ $section-title-skew: 30;
   .scrollbar {
     overflow-y: scroll;
   }
-  
+
   .scrollbar::-webkit-scrollbar {
     width: 1em;
   }
-  
+
   .scrollbar::-webkit-scrollbar:has(.scrollbar-hover-section:hover) {
     display: block;
   }
-  
+
   .scrollbar::-webkit-scrollbar-track {
     border-radius: 1em;
     opacity: 0;
   }
-  
+
   .scrollbar::-webkit-scrollbar-thumb {
     background-color: var(--color-lightgray);
     background-clip: padding-box;
@@ -167,16 +167,91 @@ $section-title-skew: 30;
     border-radius: 100vw;
     min-height: 3em;
   }
-  
+
   .thin-scrollbar {
     @extend .scrollbar;
   }
-  
+
   .thin-scrollbar::-webkit-scrollbar {
     width: .6em;
   }
-  
+
   .thin-scrollbar::-webkit-scrollbar-track {
     border-radius: .6em;
   }
+}
+
+// fade-in animation
+@keyframes firstSlide {
+  0% {
+    -webkit-transform: translateY(1200px);
+    transform: translateY(1200px)
+  }
+
+  20% {
+    -webkit-transform: translateY(80px);
+    transform: translateY(80px)
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
+@keyframes firstFade {
+  0% {
+    opacity: 0
+  }
+
+  20% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes mainSlide {
+  0% {
+      -webkit-transform: translate3d(0, 1200px, 0);
+      transform: translate3d(0, 1200px, 0)
+  }
+
+  20% {
+      -webkit-transform: translate3d(0, 120px, 0);
+      transform: translate3d(0, 120px, 0)
+  }
+
+  100% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0)
+  }
+}
+
+@keyframes mainFade {
+  0% {
+      opacity: 0
+  }
+
+  40% {
+      opacity: 0
+  }
+
+  100% {
+      opacity: 1
+  }
+}
+
+header {
+  animation: mainFade 0.75s;
+}
+
+.page-content-wrapper > section:is(:first-child) {
+  animation: firstSlide 0.75s, firstFade 1s;
+}
+
+section:not(.page-content-wrapper > section:is(:first-child)) {
+  animation: mainSlide 0.75s, mainFade 1s;
 }

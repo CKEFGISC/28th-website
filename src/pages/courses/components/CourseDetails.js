@@ -1,6 +1,6 @@
 import ReactMarkdown from "react-markdown";
 
-export default function CourseIntro(props) {
+export default function CourseDetails(props) {
   return (
     <div className="d-flex course mb-5">
       <img
@@ -9,12 +9,6 @@ export default function CourseIntro(props) {
       />
       <span className="description" style={{ marginLeft: "20px" }}>
         <ReactMarkdown children={props.content} />
-        <a href={"#/courses" + props.href ?? ""}>
-          <button className={`btn btn-${props.btnColor || "primary"} mt-2`} src="?alt=2">
-            查看更多&nbsp;
-            <i className="fa-solid fa-arrow-right-long"></i>
-          </button>
-        </a>
       </span>
     </div>
   );

@@ -1,9 +1,11 @@
+import React from "react";
 import {
   createHashRouter,
   RouterProvider
 } from "react-router-dom";
+import $ from "jquery";
 
-import Page, { ErrorPage } from "./Page";
+import Page, { ErrorPage } from "./utils/Page";
 
 import Home from "./pages/home/Home";
 import Events from "./pages/events/Events";
@@ -22,6 +24,10 @@ const router = createHashRouter([
 ]);
 
 export default function Main() {
+  React.useEffect(() => {
+    $(".main-wrapper")[0].scrollTo({ top: 0, behavior: "instant" });
+  });
+
   return (
     <RouterProvider router={router} />
   );

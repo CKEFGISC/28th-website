@@ -1,65 +1,25 @@
 import React from "react";
+import { useSearchParams } from "react-router-dom";
 
 import "./Courses.scss";
 
-import Loading from "../../utils/Loading";
-import SectionTitle from "../../utils/SectionTitle";
-
-import CourseIntro from "./components/CourseIntro";
-
-import shortDescriptionPath from "./descriptions/short.md";
+import CourseList from "./pages/List";
+import CourseIndividual from "./pages/Individual";
 
 export default function Courses() {
-  const [text, setText] = React.useState();
+  const [ searchParams ] = useSearchParams();
+  const view = searchParams.get("view");
 
-  React.useEffect(() => {
-    fetch(shortDescriptionPath)
-      .then(response => response.text())
-      .then(textContent => setText(textContent));
-  });
+  if (!view) {
+    return (<CourseList />);
+  }
 
-  return (<>
-    <section id="title-bar">
-      課程介紹
-    </section>
-    <section id="courses">
-      <SectionTitle>112 上</SectionTitle>
-      <div className="container py-1">
-        {text ? (<>
-          <CourseIntro
-            title="網頁"
-            imgSrc="/images/courses/web.avif"
-            content={text.split("<%-== next ==-%>")[0]}
-            btnColor="crimson"
-          />
-          <CourseIntro
-            title="Python"
-            imgSrc="/images/courses/python.jpg"
-            content={text.split("<%-== next ==-%>")[1]}
-            btnColor="gamboge"
-          />
-          <CourseIntro
-            title="遊戲設計"
-            imgSrc="/images/courses/game_design.webp"
-            content={text.split("<%-== next ==-%>")[2]}
-            btnColor="success"
-          />
-          <CourseIntro
-            title="Blender"
-            imgSrc="/images/courses/blender.jpg"
-            content={text.split("<%-== next ==-%>")[3]}
-            btnColor="iris"
-          />
-          <CourseIntro
-            title="演算法"
-            imgSrc="/images/courses/algorithm.jpg"
-            content={text.split("<%-== next ==-%>")[4]}
-            btnColor="orchid"
-          />
-        </>) : (
-          <Loading />
-        )}
-      </div>
-    </section>
-  </>);
+  const index = [ "web", "python", "game_design", "blender", "algorithm" ].indexOf(view);
+
+  if (index === -1) {
+    window.location.replace("#/courses");
+    return (<></>);
+  }
+
+  return (<CourseIndividual index={index} />);
 }

@@ -40,3 +40,15 @@
 		font-size: 16px;
 	}
 }
+
+#intro h1 {
+  animation: firstSlide 1s, firstFade 1.25s;
+}
+
+#intro h2 {
+  animation: mainSlide 1s, mainFade 1.5s;
+}
+
+#intro .btn {
+  animation: mainSlide 1.25s, mainFade 1.75s;
+}
