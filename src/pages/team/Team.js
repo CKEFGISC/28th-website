@@ -1,3 +1,4 @@
+import $ from "jquery";
 import Placeholder from "../../utils/Placeholder";
 import "./Team.scss";
 import Person from "./components/Person";
@@ -16,32 +17,23 @@ function TeamContainer(props) {
 
 export default function Team() {
   function setAnchorHeightBy(selector) {
-    let anchorElement = document.querySelector(".team-section-anchor");
-    let referenceElement = document.querySelector(selector);
-    if (!anchorElement || !referenceElement) return;
+    let anchorElement = $(".team-section-anchor");
+    let referenceElement = $(selector);
 
-    anchorElement.style["height"] 
-      = referenceElement.getBoundingClientRect().height + "px";
+    anchorElement.css("height", referenceElement.height());
   }
 
   function onSwitch() {
     function setClass(selector, method, className) {
-      document.querySelectorAll(selector).forEach(element => {
-        element.classList[method](className);
-      });
+      $(selector)[method](className);
     }
 
-    // let    addClass = (selector, className) => setClass(selector, "add",    className);
-    // let removeClass = (selector, className) => setClass(selector, "remove", className);
-
     let forceClass = (selector, className, exist) => 
-      setClass(selector, exist ? "add" : "remove", className);
+      setClass(selector, exist ? "addClass" : "removeClass", className);
 
-    let isFgisc = document.querySelector("input#is-fgisc")?.checked ?? null;
-    if (isFgisc == null) return;
+    let isFgisc = $("input#is-fgisc").is(":checked");
 
     forceClass("#team-ckeisc, #team-fgisc", "shift-left", isFgisc);
-    // forceClass("#team-ckeisc", "no-height", isFgisc);
 
     setAnchorHeightBy(isFgisc ? "#team-fgisc" : "#team-ckeisc");
   }
@@ -112,7 +104,7 @@ export default function Team() {
           <Person
             role="學術"
             name="佑佑"
-            tags="甲甲, 米哈遊, 雲玩家"
+            tags="甲甲, 米哈遊"
             description={Placeholder()}
             imgSrc="/images/team/ckeisc/yo_yo.png"
             imgSrc2="/images/team/ckeisc/yo_yo_2.png"

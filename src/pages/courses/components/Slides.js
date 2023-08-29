@@ -2,7 +2,6 @@ export default function Slides(props) {
   return (
     <iframe
       {...props}
-      style={{ borderRadius: "10px", flexShrink: 0 }}
       className="slides"
       title={props.title}
       src={`${props.src}/embed`} 

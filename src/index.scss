@@ -4,6 +4,9 @@ $page-scroll-mode: scroll;
 //? scroll : always show scrollbar
 //? auto   : show scollbar when necessary
 
+// external colors
+@import "./utils/Colors.scss";
+
 // revamp
 * {
   box-sizing: border-box;

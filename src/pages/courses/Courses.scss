@@ -2,14 +2,30 @@
   margin-bottom: 0.6rem;
 }
 
+.course > .slides, .course > img { 
+  width: 400px;
+  height: fit-content;
+  border-radius: 10px; 
+  flex-shrink: 0;
+}
+
+.course > img {
+  border: 3px solid var(--color-dark);
+}
+
+.course .btn {
+  font-weight: 600;
+}
+
 @media (max-width: 992px) {
   .course {
     flex-direction: column !important;
   }
 
-  .course > .slides {
+  .course > .slides, .course > img {
     width: 600px;
-    height: 420px;
+    height: fit-content;
+    max-width: 90dvw;
   }
 
   .course > .description {

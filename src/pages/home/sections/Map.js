@@ -15,21 +15,21 @@ export default function Map() {
             imgSrc="/images/homepage/about.jpg"
             title="關於我們"
             description="＂關於社團與這個網站的介紹＂"
-            btnColor="primary"
+            btnColor="bright-red"
           />
           <Card 
             href="#/courses"
             imgSrc="/images/homepage/class.jpg"
             title="課程介紹"
             description="＂社課的介紹＂"
-            btnColor="success"
+            btnColor="mango"
           />
           <Card 
             href="#/events"
             imgSrc="/images/homepage/event.jpg"
             title="活動介紹"
             description="＂四大獵祭與其他活動＂"
-            btnColor="dark"
+            btnColor="kelly-green"
           />
           <Card 
             href="#/museum"

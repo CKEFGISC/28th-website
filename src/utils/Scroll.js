@@ -1,7 +1,9 @@
+import $ from 'jquery';
+
 export default function Scroll(props) {
   return (
     <span style={{ cursor: "pointer" }} onClick={() => {
-      document.querySelector(props.to)?.scrollIntoView({ behavior: "smooth" });
+      $(props.to)[0].scrollIntoView();
     }} {...props}>{props.children}</span>
   );
 }

@@ -1,14 +1,13 @@
 import Scroll from "../utils/Scroll";
 
 function InnerCard(props) {
-  var buttonClassNames = `btn btn-${props.btnColor || "primary"}`;
   return (
     <div className="card">
       <img src={props.imgSrc} className="card-img-top" alt="" />
       <div className="card-body">
         <h5 className="card-title">{props.title}</h5>
         <p className="card-text">{props.description}</p>
-        <span className={buttonClassNames}>點此查看</span>
+        <span className={`btn btn-${props.btnColor || "primary"}`}>點此查看</span>
       </div>
     </div>
   );
