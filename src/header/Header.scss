@@ -8,3 +8,45 @@ header nav li {
 	font-size: 20px;
 	font-weight: 600;
 }
+
+header .icon-image {
+	height: 1.8em;
+	transition: 100ms ease;
+}
+
+.header-shrink .icon-image {
+	height: 0;
+	opacity: 0;
+}
+
+.header-shrink nav li {
+	margin: 0px 15px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.header-shrink nav a {
+	padding: 5px;
+}
+
+// strange offcanvas bug
+@media (min-width: 992px) {
+	.offcanvas {
+		display: none;
+	}
+}
+
+.navbar-toggler, .offcanvas-close {
+	box-shadow: none !important;
+}
+
+.navbar-toggler {
+	border: none;
+	padding: 0;
+}
+
+.navbar-toggler-icon {
+	$size: 1.8em;
+	width: #{$size};
+	height: #{$size};
+}

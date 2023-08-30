@@ -12,7 +12,16 @@ export default function Header() {
             <a className="navbar-brand" href="#/">
               <Icon />
             </a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button
+              className="navbar-toggler"
+              type="button"
+              aria-expanded="false"
+              aria-label="Toggle Sidebar Navigation"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvas"
+              aria-controls="offcanvas"
+            >
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse justify-content-end" id="navbarNav">

@@ -1,22 +1,20 @@
 import SectionTitle from "../../../utils/SectionTitle";
-import Event from "../Template";
-
-import { handleFadeIn } from "../../../utils/Page";
+import EventIntro from "../components/EventIntro";
 
 export default function Planning() {
   return (
-    <section id="planning" className="events-page-section" onLoad={handleFadeIn}>
+    <section id="planning" className="events-page-section">
       <div className="container">
         <SectionTitle>不定期與暫緩中活動</SectionTitle>
-        <Event
-          imgSrc="..."
+        <EventIntro
+          imgSrc={null}
           imgText="2023 聯合幹訓"
           title="幹訓"
           time="七月"
           description="幹部訓練。於七月舉辦，不過這個活動的舉辦是根據大執政屆三屆的學長姊的意願來舉辦。分為學術幹訓及活動幹訓，由學長姐帶著新上任的幹部們體驗幹部生活，增進彼此的感情。"
         />
-        <Event
-          imgSrc="..."
+        <EventIntro
+          imgSrc={null}
           imgText="2024 (?) 聯合社友會"
           title="社友會"
           time="未定"

@@ -15,12 +15,10 @@ import Footer from "./footer/Footer";
 const root = ReactDOM.createRoot($("#root")[0]);
 root.render(
   <React.StrictMode>
+    <Header />
+    
     <div className="main-wrapper scrollbar">
-      <Header />
-
-      <div className="page-content-wrapper">
-        <Main />
-      </div>
+      <Main />
 
       <Footer />
     </div>

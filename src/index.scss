@@ -142,7 +142,7 @@ $section-title-skew: 30;
 }
 
 // scrollbar
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .scrollbar {
     overflow-y: scroll;
   }
@@ -261,3 +261,7 @@ section:not(.page-content-wrapper > section:is(:first-child)) {
 .fade-in:not(.hiding) {
   animation: firstSlide 0.75s, firstFade 0.75s;
 }
+
+// button:focus {
+//   box-shadow: 0 0 0 1px var(--color-dark) !important;
+// }

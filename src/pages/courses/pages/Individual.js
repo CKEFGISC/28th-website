@@ -11,7 +11,7 @@ function setContent(index, view, textContent, setText) {
       "algorithm": "演算法",
     },
     imgSrcs = {
-      "algorithm": "al",
+      "algorithm": null,
     }
 
   setText(<CourseDetails

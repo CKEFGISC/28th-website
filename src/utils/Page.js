@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouteError } from "react-router-dom";
 import $ from "jquery";
+import Offcanvas from "../offcanvas/OffCanvas";
 
 export function handleFadeIn() {
   $(".fade-in.hiding").each((i, element) => {
@@ -13,6 +14,22 @@ export function handleFadeIn() {
       object.removeClass("hiding");
     }
   });
+}
+
+export function handleHeaderSize() {
+  let mainWrapper = $(".main-wrapper");
+  $("header").toggleClass(
+    "header-shrink", 
+    mainWrapper.scrollTop() > 50 && mainWrapper.prop("scrollHeight") > window.outerHeight * 1.2
+  );
+}
+
+export function windowOnLoad() {
+  $(".main-wrapper").on("scroll", () => window.requestAnimationFrame(handleFadeIn));
+  $(window).on("resize", handleFadeIn);
+  handleFadeIn();
+
+  $(".main-wrapper").on("scroll", handleHeaderSize);
 }
 
 export default function Page(props) {
@@ -30,15 +47,16 @@ export default function Page(props) {
     });
 
     // for mobile
-    $(".main-wrapper").on("scroll", handleFadeIn);
-    handleFadeIn();
-    // for pc
-    window.addEventListener("load", () => {
-      $(".main-wrapper").on("scroll", handleFadeIn);
-      handleFadeIn();
-    });
+    windowOnLoad();
+    // for PC
+    window.addEventListener("load", windowOnLoad);
   }, [ props.title ]);
-  return props.children;
+  return (<>
+    <div className="page-content-wrapper" onLoad={handleFadeIn}>
+      {props.children}
+    </div>
+    <Offcanvas />
+  </>);
 };
 
 export function ErrorPage() {
