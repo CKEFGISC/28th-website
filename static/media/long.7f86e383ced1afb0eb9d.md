@@ -1,12 +1,12 @@
 # 網頁
 
-我不知道，但我正在寫
+%UNDONE%
 
 <%-== next ==-%>
 
 # Python
 
-我不知道
+%UNDONE%
 
 <%-== next ==-%>
 
@@ -26,10 +26,10 @@
 
 # Blender
 
-我不知道
+%UNDONE%
 
 <%-== next ==-%>
 
 # 演算法
 
-我不知道
+%UNDONE%
