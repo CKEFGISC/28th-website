@@ -1,7 +1,13 @@
+import $ from "jquery";
+
+function closeOffcanvas() {
+  $(".offcanvas-close").trigger("click");
+}
+
 export default function OffLink(props) {
   return (
-    <li className="offcanvas-item">
-      <a {...props}>{props.children}</a>
-    </li>
+    <a {...props} className="offcanvas-item" onClick={closeOffcanvas}>
+      {props.children}
+    </a>
   );
 }

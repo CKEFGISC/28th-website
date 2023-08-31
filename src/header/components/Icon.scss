@@ -21,14 +21,29 @@
 	overflow-x: hidden;
 	white-space: nowrap;
 }
-.icon .hover-to-show, .icon:hover .hover-to-hide {
+
+.icon .hover-to-show {
 	width: 0;
 	opacity: 0;
 }
-.icon:hover .hover-to-show, .icon .hover-to-hide {
+
+.icon .hover-to-hide {
 	width: 2.25em;
 	opacity: 1;
 }
-.icon:hover .hover-to-show.long {
-	width: 6.35em;
+
+@media (min-width: 576px) {
+	.icon:hover .hover-to-hide:not(.header-shrink *) {
+		width: 0;
+		opacity: 0;
+	}
+
+	.icon:hover .hover-to-show:not(.header-shrink *) {
+		width: 2.25em;
+		opacity: 1;
+	}
+
+	.icon:hover .hover-to-show.long:not(.header-shrink *) {
+		width: 6.35em;
+	}
 }

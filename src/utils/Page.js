@@ -40,8 +40,8 @@ export default function Page(props) {
 
     var footerElement = $("footer")[0];
     footerElement.style.animation = "none";
-    window.requestAnimationFrame((time) => {
-      window.requestAnimationFrame((time) => {
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => {
         footerElement.style.animation = null;
       });
     });

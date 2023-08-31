@@ -1,4 +1,5 @@
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 export default function CourseDetails(props) {
   return (
@@ -8,7 +9,7 @@ export default function CourseDetails(props) {
         alt={props.title}
       />
       <span className="description" style={{ marginLeft: "20px" }}>
-        <ReactMarkdown children={props.content} />
+        <ReactMarkdown rehypePlugins={[ rehypeRaw ]} children={props.content} />
       </span>
     </div>
   );

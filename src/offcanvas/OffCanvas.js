@@ -1,3 +1,4 @@
+import $ from "jquery";
 import OffLink from "./components/OffLink"; 
 import "./OffCanvas.scss";
 
@@ -7,7 +8,8 @@ function Up(props) {
 
 export default function Offcanvas() {
   return (
-    <div className="offcanvas offcanvas-end" tabIndex={-1} id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div className="offcanvas offcanvas-end" tabIndex={-1} 
+      id="offcanvas" aria-labelledby="offcanvasLabel">
       <div className="offcanvas-header">
         <h5 className="offcanvas-title" id="offcanvasLabel">
           CKEFGISC 28<Up>th</Up>

@@ -1,23 +1,35 @@
 import React from "react";
+import $ from "jquery";
 
 import CourseDetails from "../components/CourseDetails";
 
 import longDescriptionPath from "../descriptions/long.md";
+
 import Loading from "../../../utils/Loading";
+import Placeholder from "../../../utils/Placeholder";
 
 function setContent(index, view, textContent, setText) {
+  var theContent = textContent.split("<%-== next ==-%>")[index];
   var  
     titles = {
+      "web": "網頁",
+      "python": "Python",
+      "game_design": "遊戲設計",
+      "blender": "Blender",
       "algorithm": "演算法",
     },
     imgSrcs = {
-      "algorithm": null,
+      "web": "/images/courses/web.avif",
+      "python": "/images/courses/python.jpg",
+      "game_design": "/images/courses/game_design.webp",
+      "blender": "/images/courses/blender.jpg",
+      "algorithm": "/images/courses/algorithm.jpg"
     }
 
   setText(<CourseDetails
     title={titles[view]}
     imgSrc={imgSrcs[view]}
-    content={textContent.split("<%-== next ==-%>")[index]}
+    content={theContent.includes("%UNDONE%") ? `# ${titles[view]}\n\n` + Placeholder() : theContent}
   />);
 }
 
@@ -25,6 +37,8 @@ export default function CourseIndividual(props) {
   const [text, setText] = React.useState();
 
   React.useEffect(() => {
+    $(".main-wrapper")[0].scrollTo({ top: 0, behavior: "instant" });
+
     fetch(longDescriptionPath)
       .then(response => response.text())
       .then(textContent => setContent(props.index, props.view, textContent, setText));

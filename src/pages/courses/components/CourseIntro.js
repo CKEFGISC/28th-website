@@ -1,4 +1,5 @@
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 export default function CourseIntro(props) {
   return (
@@ -8,7 +9,7 @@ export default function CourseIntro(props) {
         alt={props.title}
       />
       <span className="description" style={{ marginLeft: "20px" }}>
-        <ReactMarkdown children={props.content} />
+        <ReactMarkdown rehypePlugins={[rehypeRaw]} children={props.content} />
         <a href={"#/courses" + props.href ?? ""}>
           <button className={`btn btn-${props.btnColor || "primary"} mt-2`} src="?alt=2">
             查看更多&nbsp;
