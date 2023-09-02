@@ -1,5 +1,4 @@
 import React from "react";
-import $ from "jquery";
 
 import CourseDetails from "../components/CourseDetails";
 
@@ -7,6 +6,7 @@ import longDescriptionPath from "../descriptions/long.md";
 
 import Loading from "../../../utils/Loading";
 import Placeholder from "../../../utils/Placeholder";
+import { switchPageAnimation } from "../../../utils/Page";
 
 function setContent(index, view, textContent, setText) {
   var theContent = textContent.split("<%-== next ==-%>")[index];
@@ -37,12 +37,12 @@ export default function CourseIndividual(props) {
   const [text, setText] = React.useState();
 
   React.useEffect(() => {
-    $(".main-wrapper")[0].scrollTo({ top: 0, behavior: "instant" });
+    switchPageAnimation();
 
     fetch(longDescriptionPath)
       .then(response => response.text())
       .then(textContent => setContent(props.index, props.view, textContent, setText));
-  });
+  }, [ props ]);
 
   return (<>
     <section id="title-bar">

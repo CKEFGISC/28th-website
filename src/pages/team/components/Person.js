@@ -1,6 +1,5 @@
 import React from "react";
-import ReactMarkdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
+import Markdown from "../../../utils/Remarkable";
 
 function Tag(props) {
   return (
@@ -48,10 +47,7 @@ export default function Person(props) {
           </React.Fragment>))}
         </p>
 
-        <ReactMarkdown
-          children={description} 
-          rehypePlugins={[ rehypeRaw ]}
-        />
+        <Markdown content={description} />
       </span>
     </div>
   );

@@ -1,7 +1,17 @@
+// fix 
 #news-accordion .accordion-button:focus {
   box-shadow: none !important;
 }
 
-.accordion-button:not(.collapsed) {
+// background
+#news-accordion .accordion-button:not(.collapsed) {
   background: var(--color-primary-soft);
+}
+#news-accordion .accordion-body, #news-accordion .accordion-button:is(.collapsed) {
+  background: var(--color-white);
+}
+
+// fix title text color
+#news-accordion .accordion-button:not(.collapsed) {
+  color: var(--color-dark);
 }

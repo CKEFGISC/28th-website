@@ -9,9 +9,7 @@ export default function Header() {
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid d-flex">
-            <a className="navbar-brand" href="#/">
-              <Icon />
-            </a>
+            <Icon />
 
             <button
               className="navbar-toggler"

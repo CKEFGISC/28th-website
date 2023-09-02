@@ -14,7 +14,7 @@ export default function CourseList() {
     fetch(shortDescriptionPath)
       .then(response => response.text())
       .then(textContent => setText(textContent));
-  });
+  }, []);
 
   return (<>
     <section id="title-bar">

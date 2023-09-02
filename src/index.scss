@@ -116,6 +116,9 @@ $section-title-skew: 30;
 .text-paragraph p {
   margin-bottom: 0.4em;
 }
+.text-paragraph p:is(:last-child) {
+  margin-bottom: 1em;
+}
 
 @for $i from 1 to 10 {
   .text-paragraph .tab-#{$i} {

@@ -1,0 +1,61 @@
+// blockquotes
+.markdown blockquote {
+  display: flex;
+}
+.markdown blockquote > p {
+  margin-bottom: 0;
+}
+.markdown blockquote::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  margin-right: 10px;
+  border-radius: 2px 8px 8px 2px;
+  background: var(--color-lightgray);
+}
+
+// images
+.markdown img {
+  border-radius: 4px;
+  margin-bottom: 0.8em;
+}
+
+// codeblocks
+.markdown code {
+  background: var(--color-white-soft);
+  color: var(--color-dark);
+  font-size: 0.875em;
+  padding: 4px;
+  border-radius: 3px;
+}
+.markdown pre > code {
+  display: block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 0.4em;
+}
+
+// tables
+.markdown table {
+  border: 1px solid var(--color-lightgray);
+  margin-bottom: 0.8em;
+}
+.markdown table * {
+  box-sizing: content-box;
+  border: 1px solid var(--color-lightgray);
+}
+.markdown table th {
+  background: var(--color-white-soft);
+}
+.markdown table th, .markdown table td {
+  padding: 6px 10px;
+}
+
+// lines
+.markdown hr {
+  border: none;
+  border-radius: 2px;
+  height: 3px;
+  background: var(--color-lightgray);
+  opacity: 1;
+}

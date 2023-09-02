@@ -1,10 +1,9 @@
 import React from "react";
-import ReactMarkdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
 
 import "./News.scss"; 
 
 import Loading from "../../utils/Loading";
+import Markdown from "../../utils/Remarkable";
 
 import contentPath from "./content.md";
 
@@ -37,7 +36,7 @@ function handle(textContent, setText) {
           <div id={`news-${i}`} className="accordion-collapse collapse" data-bs-parent="#news-accordion">
             <div className="accordion-body">
               {content ? (
-                <ReactMarkdown children={content} rehypePlugins={[rehypeRaw]} />
+                <Markdown content={content} />
               ) : (
                 <p><i>This field is empty...</i></p>
               )}

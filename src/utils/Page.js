@@ -32,19 +32,23 @@ export function windowOnLoad() {
   $(".main-wrapper").on("scroll", handleHeaderSize);
 }
 
+export function switchPageAnimation() {
+  $(".main-wrapper")[0].scrollTo({ top: 0, behavior: "instant" });
+
+  var footerElement = $("footer")[0];
+  footerElement.style.animation = "none";
+  window.requestAnimationFrame(() => {
+    window.requestAnimationFrame(() => {
+      footerElement.style.animation = null;
+    });
+  });
+}
+
 export default function Page(props) {
   React.useEffect(() => {
     document.title = `${props.title} | 建北電資 28th` || "";
 
-    $(".main-wrapper")[0].scrollTo({ top: 0, behavior: "instant" });
-
-    var footerElement = $("footer")[0];
-    footerElement.style.animation = "none";
-    window.requestAnimationFrame(() => {
-      window.requestAnimationFrame(() => {
-        footerElement.style.animation = null;
-      });
-    });
+    switchPageAnimation();
 
     // for mobile
     windowOnLoad();
