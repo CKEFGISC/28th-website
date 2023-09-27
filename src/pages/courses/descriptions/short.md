@@ -34,4 +34,4 @@
 
 講師：807<sup><small>807</small></sup>、世宗、佑佑
 
-這堂課將滿足學生高中所需的基本程式能力，讓學生有能力參與[APCS](https://apcs.csie.ntnu.edu.tw)以及程式競賽
+這堂課將教授 C++ 語法與演算法，讓學生有能力參與 [APCS](https://apcs.csie.ntnu.edu.tw) 以及其他程式競賽

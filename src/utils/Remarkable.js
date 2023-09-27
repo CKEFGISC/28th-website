@@ -11,7 +11,7 @@ export default function Markdown(props) {
           html: true,               // Enable HTML tags in source
           xhtmlOut: true,           // Use "/" to close single tags (<br />)
           breaks: false,            // Convert "\n" in paragraphs into <br>
-          langPrefix: "prettyprint language-",  // CSS language prefix for fenced blocks
+          langPrefix: "language-",  // CSS language prefix for fenced blocks
         }}
         container="div"
       />
