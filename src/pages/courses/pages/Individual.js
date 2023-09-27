@@ -10,7 +10,7 @@ import { switchPageAnimation } from "../../../utils/Page";
 
 function setContent(index, view, textContent, setText) {
   var theContent = textContent.split("<%-== next ==-%>")[index];
-  var  
+  var 
     titles = {
       "web": "網頁",
       "python": "Python",
