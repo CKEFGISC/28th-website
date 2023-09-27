@@ -32,4 +32,8 @@
 
 # 演算法
 
-%UNDONE%
+這堂課將滿足學生高中所需的基本程式能力，讓學生有能力參與 [APCS](https://apcs.csie.ntnu.edu.tw)以及程式競賽
+
+在演算法小社課的前幾堂，我們將先教授C++的基本語法，為之後的 [APCS](https://apcs.csie.ntnu.edu.tw) 以及程式競賽鋪下最穩固的基礎。
+
+有了C++與法的基礎，我們將進入到資料結構、貪婪算法(greedy)、分治，排序算法、動態規劃(dynamic programming)、圖論 等等，讓社員能夠在APCS的實作中，得到4級的分數。
