@@ -78,36 +78,63 @@ export default function Team() {
             role="社長"
             name="水獺"
             tags="會考 36 分大電神, 吉他人, 真心話大冒險追到女友"
-            description={Placeholder()}
+            description={`
+「那你很牛逼喔」── 水獺
+
+水獺是我們的&nbsp;<s>&nbsp;獨裁&nbsp;</s>&nbsp;社長  
+曾因拒絕使用晴建好的 Discord 伺服器而使用他自己到處有問題的伺服器，然後又不給其他幹部管理員權限，導致晴打算擺爛叫水獺自己去寫社網  
+不過你可以很明顯地知道，社網還是架好了，所以這證明我們社長還是很棒的啦～
+            `}
             imgSrc="/images/team/ckeisc/water_lai.png"
             imgSrc2="/images/team/ckeisc/water_lai_2.png"
           />
           <Person
             role="副社長"
             name="柴柴"
-            tags="柴犬, 腳受傷, 阿貝"
-            description={Placeholder()}
+            tags="柴犬, 腳受傷, 阿貝, 有品建中人"
+            description={`
+「離開！離開！不要偷看！」── <s>&nbsp;阿貝&nbsp;</s>&nbsp;*柴柴*
+
+柴柴不知為何總是腿受傷，有點慘  
+暑訓時 RPG 的角色「阿貝」因為台詞很有趣，所以被大家記住了  
+真正的綽號是「柴柴」，不難猜出是因為他特別喜歡柴犬
+            `}
             imgSrc="/images/team/ckeisc/a_bei.png"
           />
           <Person
             role="副社長"
             name="Cc"
             tags="Fifa 狂人, 說話超直白, 奇怪冷知識"
-            description={Placeholder()}
+            description={`
+「ㄏㄏ」── Cc
+
+為什麼執秘開會的時候還在玩足球遊戲，太神奇了。Cc 是個 Fifa 狂人，常常會看到他在電腦上玩 Fifa 遊戲  
+他本人特別有搞笑功力，但自己卻可以很正經  
+我可沒說你可以找他挑戰「憤怒蔬菜」，現在還沒有人能贏過 Cc 喔
+            `}
             imgSrc="/images/team/ckeisc/ci_ci.png"
           />
           <Person
             role="學術長"
             name={<span title={BIG_NUMBER}>807<Up>807</Up></span>}
             tags="好毒瘤, 椒麻雞器人, 上機考破臺"
-            description={Placeholder()}
+            description={`
+「為什麼不用 Vim」── 807
+
+Orz 學術長好電！可是他常常在裝弱，曾寫出「椒麻雞器人」用來膜拜別人，但我覺得得先膜拜他自己  
+寫 Code 的方式非常的毒，而且還經常會搞一些很奇怪的東西，例如把 VSCode 變透明然後在裡面用 Vim 之類的
+            `}
             imgSrc="/images/team/ckeisc/big_number.png"
           />
           <Person
             role="學術"
             name="世宗"
             tags="免修仔, 新竹競走代表隊, 團購訂單"
-            description={Placeholder()}
+            description={`
+「」 等一下我打不完 // TODO: 把這裡打完
+
+那據說 OJ 是他架的
+            `}
             imgSrc="/images/team/ckeisc/little_tsai.png"
             imgSrc2="/images/team/ckeisc/little_tsai_2.png"
           />
@@ -115,7 +142,12 @@ export default function Team() {
             role="學術"
             name="佑佑"
             tags="甲甲, 米哈遊"
-            description={Placeholder()}
+            description={`
+「我是可愛的女孩子」── 佑佑
+
+如你所見，這個人是甲甲！除了是甲以外，也是個社交牛逼，常常會跑去跟學弟妹聊天  
+身邊總是帶著一隻名為「短短」，沒有脖子的長頸鹿
+`}
             imgSrc="/images/team/ckeisc/yo_yo.png"
             imgSrc2="/images/team/ckeisc/yo_yo_2.png"
           />
@@ -144,7 +176,12 @@ export default function Team() {
             role="學術 & 網管"
             name="晴"
             tags="晴鏡之好, 表符狂人, 我哪有差, JavaScript, 用 2000 行 C++ 輸出 Hello World, Rickroll 專家"
-            description={Placeholder()}
+            description={`
+「顯然是佑佑在搞」── 晴
+
+此人會用 JavaScript 做任何除了寫 OJ 以外事情，畢竟寫 OJ 不能用 JavaScript  
+那麼寫 C++ 的時候，就會想要實做一堆 JavaScript 有的模板，所以寫一個 Hello World 會有 2000 多行，其中包括了稀疏表和線段樹模板
+            `}
             imgSrc="/images/team/ckeisc/star_huey.png"
             imgSrc2="/images/team/ckeisc/star_huey_2.png"
           />

@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "awesome-typescript-loader": "^5.2.1",
     "gh-pages": "^6.0.0",
     "hast-util-raw": "^9.0.0",
     "jquery": "^3.7.1",
@@ -20,12 +21,13 @@
     "remarkable": "^2.0.1",
     "remarkable-react": "^1.4.3",
     "sass": "^1.66.1",
+    "source-map-loader": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "set PORT=3404 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -47,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
   }
 }

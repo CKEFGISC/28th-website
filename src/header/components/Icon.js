@@ -10,7 +10,7 @@ function onIconClick() {
 
 export default function Icon() {
   return (
-    <a className="navbar-brand" onClick={onIconClick}>
+    <span className="navbar-brand" onClick={onIconClick}>
       <div className="icon px-0">
         <div className="icon-image">
           <img
@@ -37,6 +37,6 @@ export default function Icon() {
           <span className="hover-to-hide">28<sup><small>th</small></sup></span>
         </div>
       </div>
-    </a>
+    </span>
   );
 }

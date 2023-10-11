@@ -1,4 +1,3 @@
-import $ from "jquery";
 import OffLink from "./components/OffLink"; 
 import "./OffCanvas.scss";
 

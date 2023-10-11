@@ -23,7 +23,7 @@ export default function Footer() {
         />
         <Brand 
           title="建北電資 28th Email"
-          href="https://github.com/ckefgisc-28th/"
+          href="mailto://ckefgisc28th@gmail.com"
           brandSeries="regular"
           brandName="envelope"
           brandSize="lg"
