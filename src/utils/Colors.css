@@ -1,0 +1,1266 @@
+/*---------------------------------------*\
+|                                         |
+|             ===============             |
+|              Color Library              |
+|             ===============             |
+|                                         |
+|    https://htmlcolorcodes.com/colors/   |
+|                                         |
+\.---------------------------------------*/
+:root {
+  --ecol-black: 0, 0, 0;
+  --ecol-charcoal: 54, 69, 79;
+  --ecol-dark-green: 2, 48, 32;
+  --ecol-dark-purple: 48, 25, 52;
+  --ecol-jet-black: 52, 52, 52;
+  --ecol-licorice: 27, 18, 18;
+  --ecol-matte-black: 40, 40, 43;
+  --ecol-midnight-blue: 25, 25, 112;
+  --ecol-onyx: 53, 57, 53;
+  --ecol-aqua: 0, 255, 255;
+  --ecol-azure: 240, 255, 255;
+  --ecol-baby-blue: 137, 207, 240;
+  --ecol-blue: 0, 0, 255;
+  --ecol-blue-gray: 115, 147, 179;
+  --ecol-blue-green: 8, 143, 143;
+  --ecol-bright-blue: 0, 150, 255;
+  --ecol-cadet-blue: 95, 158, 160;
+  --ecol-cobalt-blue: 0, 71, 171;
+  --ecol-cornflower-blue: 100, 149, 237;
+  --ecol-cyan: 0, 255, 255;
+  --ecol-dark-blue: 0, 0, 139;
+  --ecol-denim: 111, 143, 175;
+  --ecol-egyptian-blue: 20, 52, 164;
+  --ecol-electric-blue: 125, 249, 255;
+  --ecol-glaucous: 96, 130, 182;
+  --ecol-jade: 0, 163, 108;
+  --ecol-indigo: 63, 0, 255;
+  --ecol-iris: 93, 63, 211;
+  --ecol-light-blue: 173, 216, 230;
+  --ecol-navy-blue: 0, 0, 128;
+  --ecol-neon-blue: 31, 81, 255;
+  --ecol-pastel-blue: 167, 199, 231;
+  --ecol-periwinkle: 204, 204, 255;
+  --ecol-powder-blue: 182, 208, 226;
+  --ecol-robin-egg-blue: 150, 222, 209;
+  --ecol-royal-blue: 65, 105, 225;
+  --ecol-sapphire-blue: 15, 82, 186;
+  --ecol-seafoam-green: 159, 226, 191;
+  --ecol-sky-blue: 135, 206, 235;
+  --ecol-steel-blue: 70, 130, 180;
+  --ecol-teal: 0, 128, 128;
+  --ecol-turquoise: 64, 224, 208;
+  --ecol-ultramarine: 4, 55, 242;
+  --ecol-verdigris: 64, 181, 173;
+  --ecol-zaffre: 8, 24, 168;
+  --ecol-almond: 234, 221, 202;
+  --ecol-brass: 225, 193, 110;
+  --ecol-bronze: 205, 127, 50;
+  --ecol-brown: 165, 42, 42;
+  --ecol-buff: 218, 160, 109;
+  --ecol-burgundy: 128, 0, 32;
+  --ecol-burnt-sienna: 233, 116, 81;
+  --ecol-burnt-umber: 110, 38, 14;
+  --ecol-camel: 193, 154, 107;
+  --ecol-chestnut: 149, 69, 53;
+  --ecol-chocolate: 123, 63, 0;
+  --ecol-cinnamon: 210, 125, 45;
+  --ecol-coffee: 111, 78, 55;
+  --ecol-cognac: 131, 67, 51;
+  --ecol-copper: 184, 115, 51;
+  --ecol-cordovan: 129, 65, 65;
+  --ecol-dark-brown: 92, 64, 51;
+  --ecol-dark-red: 139, 0, 0;
+  --ecol-dark-tan: 152, 133, 88;
+  --ecol-ecru: 194, 178, 128;
+  --ecol-fallow: 193, 154, 107;
+  --ecol-fawn: 229, 170, 112;
+  --ecol-garnet: 154, 42, 42;
+  --ecol-golden-brown: 150, 105, 25;
+  --ecol-khaki: 240, 230, 140;
+  --ecol-light-brown: 196, 164, 132;
+  --ecol-mahogany: 192, 64, 0;
+  --ecol-maroon: 128, 0, 0;
+  --ecol-mocha: 150, 121, 105;
+  --ecol-nude: 242, 210, 189;
+  --ecol-ochre: 204, 119, 34;
+  --ecol-olive-green: 128, 128, 0;
+  --ecol-oxblood: 74, 4, 4;
+  --ecol-puce: 169, 92, 104;
+  --ecol-red-brown: 165, 42, 42;
+  --ecol-red-ochre: 145, 56, 49;
+  --ecol-russet: 128, 70, 27;
+  --ecol-saddle-brown: 139, 69, 19;
+  --ecol-sand: 194, 178, 128;
+  --ecol-sienna: 160, 82, 45;
+  --ecol-tan: 210, 180, 140;
+  --ecol-taupe: 72, 60, 50;
+  --ecol-tuscan-red: 124, 48, 48;
+  --ecol-wheat: 245, 222, 179;
+  --ecol-wine: 114, 47, 55;
+  --ecol-ash-gray: 178, 190, 181;
+  --ecol-dark-gray: 169, 169, 169;
+  --ecol-gray: 128, 128, 128;
+  --ecol-gunmetal-gray: 129, 133, 137;
+  --ecol-light-gray: 211, 211, 211;
+  --ecol-pewter: 137, 148, 153;
+  --ecol-platinum: 229, 228, 226;
+  --ecol-sage-green: 138, 154, 91;
+  --ecol-silver: 192, 192, 192;
+  --ecol-slate-gray: 112, 128, 144;
+  --ecol-smoke: 132, 136, 132;
+  --ecol-steel-gray: 113, 121, 126;
+  --ecol-aquamarine: 127, 255, 212;
+  --ecol-army-green: 69, 75, 27;
+  --ecol-bright-green: 170, 255, 0;
+  --ecol-cadmium-green: 9, 121, 105;
+  --ecol-celadon: 175, 225, 175;
+  --ecol-chartreuse: 223, 255, 0;
+  --ecol-citrine: 228, 208, 10;
+  --ecol-emerald-green: 80, 200, 120;
+  --ecol-eucalyptus: 95, 133, 117;
+  --ecol-fern-green: 79, 121, 66;
+  --ecol-forest-green: 34, 139, 34;
+  --ecol-grass-green: 124, 252, 0;
+  --ecol-green: 0, 128, 0;
+  --ecol-hunter-green: 53, 94, 59;
+  --ecol-jungle-green: 42, 170, 138;
+  --ecol-kelly-green: 76, 187, 23;
+  --ecol-light-green: 144, 238, 144;
+  --ecol-lime-green: 50, 205, 50;
+  --ecol-lincoln-green: 71, 135, 120;
+  --ecol-malachite: 11, 218, 81;
+  --ecol-mint-green: 152, 251, 152;
+  --ecol-moss-green: 138, 154, 91;
+  --ecol-neon-green: 15, 255, 80;
+  --ecol-nyanza: 236, 255, 220;
+  --ecol-pastel-green: 193, 225, 193;
+  --ecol-pear: 201, 204, 63;
+  --ecol-peridot: 180, 196, 36;
+  --ecol-pistachio: 147, 197, 114;
+  --ecol-sea-green: 46, 139, 87;
+  --ecol-shamrock-green: 0, 158, 96;
+  --ecol-spring-green: 0, 255, 127;
+  --ecol-vegas-gold: 196, 180, 84;
+  --ecol-viridian: 64, 130, 109;
+  --ecol-amber: 255, 191, 0;
+  --ecol-apricot: 251, 206, 177;
+  --ecol-bisque: 242, 210, 189;
+  --ecol-bright-orange: 255, 172, 28;
+  --ecol-burnt-orange: 204, 85, 0;
+  --ecol-butterscotch: 227, 150, 62;
+  --ecol-cadmium-orange: 242, 140, 40;
+  --ecol-coral: 255, 127, 80;
+  --ecol-coral-pink: 248, 131, 121;
+  --ecol-dark-orange: 139, 64, 0;
+  --ecol-desert: 250, 213, 165;
+  --ecol-gamboge: 228, 155, 15;
+  --ecol-golden-yellow: 255, 192, 0;
+  --ecol-goldenrod: 218, 165, 32;
+  --ecol-light-orange: 255, 213, 128;
+  --ecol-mango: 244, 187, 68;
+  --ecol-navajo-white: 255, 222, 173;
+  --ecol-neon-orange: 255, 95, 31;
+  --ecol-orange: 255, 165, 0;
+  --ecol-pastel-orange: 250, 200, 152;
+  --ecol-peach: 255, 229, 180;
+  --ecol-persimmon: 236, 88, 0;
+  --ecol-pink-orange: 248, 152, 128;
+  --ecol-poppy: 227, 83, 53;
+  --ecol-pumpkin-orange: 255, 117, 24;
+  --ecol-red-orange: 255, 68, 51;
+  --ecol-safety-orange: 255, 95, 21;
+  --ecol-salmon: 250, 128, 114;
+  --ecol-seashell: 255, 245, 238;
+  --ecol-sunset-orange: 250, 95, 85;
+  --ecol-tangerine: 240, 128, 0;
+  --ecol-terra-cotta: 227, 115, 94;
+  --ecol-yellow-orange: 255, 170, 51;
+  --ecol-amaranth: 159, 43, 104;
+  --ecol-cerise: 222, 49, 99;
+  --ecol-claret: 129, 19, 49;
+  --ecol-crimson: 220, 20, 60;
+  --ecol-dark-pink: 170, 51, 106;
+  --ecol-dusty-rose: 201, 169, 166;
+  --ecol-fuchsia: 255, 0, 255;
+  --ecol-hot-pink: 255, 105, 180;
+  --ecol-light-pink: 255, 182, 193;
+  --ecol-magenta: 255, 0, 255;
+  --ecol-millennial-pink: 243, 207, 198;
+  --ecol-mulberry: 119, 7, 55;
+  --ecol-neon-pink: 255, 16, 240;
+  --ecol-orchid: 218, 112, 214;
+  --ecol-pastel-pink: 248, 200, 220;
+  --ecol-pastel-red: 250, 160, 160;
+  --ecol-pink: 255, 192, 203;
+  --ecol-plum: 103, 49, 71;
+  --ecol-purple: 128, 0, 128;
+  --ecol-raspberry: 227, 11, 92;
+  --ecol-red-purple: 149, 53, 83;
+  --ecol-rose: 243, 58, 106;
+  --ecol-rose-gold: 224, 191, 184;
+  --ecol-rose-red: 194, 30, 86;
+  --ecol-ruby-red: 224, 17, 95;
+  --ecol-thistle: 216, 191, 216;
+  --ecol-watermelon-pink: 227, 115, 131;
+  --ecol-bright-purple: 191, 64, 191;
+  --ecol-byzantium: 112, 41, 99;
+  --ecol-eggplant: 72, 50, 72;
+  --ecol-lavender: 230, 230, 250;
+  --ecol-light-purple: 203, 195, 227;
+  --ecol-light-violet: 207, 159, 255;
+  --ecol-lilac: 170, 152, 169;
+  --ecol-mauve: 224, 176, 255;
+  --ecol-mauve-taupe: 145, 95, 109;
+  --ecol-pastel-purple: 195, 177, 225;
+  --ecol-quartz: 81, 65, 79;
+  --ecol-tyrian-purple: 99, 3, 48;
+  --ecol-violet: 127, 0, 255;
+  --ecol-wisteria: 189, 181, 213;
+  --ecol-blood-red: 136, 8, 8;
+  --ecol-brick-red: 170, 74, 68;
+  --ecol-bright-red: 238, 75, 43;
+  --ecol-cadmium-red: 210, 43, 43;
+  --ecol-cardinal-red: 196, 30, 58;
+  --ecol-carmine: 215, 0, 64;
+  --ecol-cherry: 210, 4, 45;
+  --ecol-falu-red: 123, 24, 24;
+  --ecol-marsala: 152, 104, 104;
+  --ecol-neon-red: 255, 49, 49;
+  --ecol-red: 255, 0, 0;
+  --ecol-scarlet: 255, 36, 0;
+  --ecol-venetian-red: 164, 42, 4;
+  --ecol-vermillion: 227, 66, 52;
+  --ecol-alabaster: 237, 234, 222;
+  --ecol-beige: 245, 245, 220;
+  --ecol-bone-white: 249, 246, 238;
+  --ecol-cornsilk: 255, 248, 220;
+  --ecol-cream: 255, 253, 208;
+  --ecol-eggshell: 240, 234, 214;
+  --ecol-ivory: 255, 255, 240;
+  --ecol-linen: 233, 220, 201;
+  --ecol-off-white: 250, 249, 246;
+  --ecol-parchment: 252, 245, 229;
+  --ecol-pearl: 226, 223, 210;
+  --ecol-vanilla: 243, 229, 171;
+  --ecol-white: 255, 255, 255;
+  --ecol-bright-yellow: 255, 234, 0;
+  --ecol-cadmium-yellow: 253, 218, 13;
+  --ecol-canary-yellow: 255, 255, 143;
+  --ecol-dark-yellow: 139, 128, 0;
+  --ecol-flax: 238, 220, 130;
+  --ecol-gold: 255, 215, 0;
+  --ecol-icterine: 252, 245, 95;
+  --ecol-jasmine: 248, 222, 126;
+  --ecol-lemon-yellow: 250, 250, 51;
+  --ecol-maize: 251, 236, 93;
+  --ecol-mustard-yellow: 255, 219, 88;
+  --ecol-naples-yellow: 250, 218, 94;
+  --ecol-pastel-yellow: 255, 250, 160;
+  --ecol-saffron: 244, 196, 48;
+  --ecol-yellow: 255, 255, 0;
+}
+
+.ebg-black {
+  background-color: rgba(var(--ecol-black), 100%);
+}
+
+.ebg-charcoal {
+  background-color: rgba(var(--ecol-charcoal), 100%);
+}
+
+.ebg-dark-green {
+  background-color: rgba(var(--ecol-dark-green), 100%);
+}
+
+.ebg-dark-purple {
+  background-color: rgba(var(--ecol-dark-purple), 100%);
+}
+
+.ebg-jet-black {
+  background-color: rgba(var(--ecol-jet-black), 100%);
+}
+
+.ebg-licorice {
+  background-color: rgba(var(--ecol-licorice), 100%);
+}
+
+.ebg-matte-black {
+  background-color: rgba(var(--ecol-matte-black), 100%);
+}
+
+.ebg-midnight-blue {
+  background-color: rgba(var(--ecol-midnight-blue), 100%);
+}
+
+.ebg-onyx {
+  background-color: rgba(var(--ecol-onyx), 100%);
+}
+
+.ebg-aqua {
+  background-color: rgba(var(--ecol-aqua), 100%);
+}
+
+.ebg-azure {
+  background-color: rgba(var(--ecol-azure), 100%);
+}
+
+.ebg-baby-blue {
+  background-color: rgba(var(--ecol-baby-blue), 100%);
+}
+
+.ebg-blue {
+  background-color: rgba(var(--ecol-blue), 100%);
+}
+
+.ebg-blue-gray {
+  background-color: rgba(var(--ecol-blue-gray), 100%);
+}
+
+.ebg-blue-green {
+  background-color: rgba(var(--ecol-blue-green), 100%);
+}
+
+.ebg-bright-blue {
+  background-color: rgba(var(--ecol-bright-blue), 100%);
+}
+
+.ebg-cadet-blue {
+  background-color: rgba(var(--ecol-cadet-blue), 100%);
+}
+
+.ebg-cobalt-blue {
+  background-color: rgba(var(--ecol-cobalt-blue), 100%);
+}
+
+.ebg-cornflower-blue {
+  background-color: rgba(var(--ecol-cornflower-blue), 100%);
+}
+
+.ebg-cyan {
+  background-color: rgba(var(--ecol-cyan), 100%);
+}
+
+.ebg-dark-blue {
+  background-color: rgba(var(--ecol-dark-blue), 100%);
+}
+
+.ebg-denim {
+  background-color: rgba(var(--ecol-denim), 100%);
+}
+
+.ebg-egyptian-blue {
+  background-color: rgba(var(--ecol-egyptian-blue), 100%);
+}
+
+.ebg-electric-blue {
+  background-color: rgba(var(--ecol-electric-blue), 100%);
+}
+
+.ebg-glaucous {
+  background-color: rgba(var(--ecol-glaucous), 100%);
+}
+
+.ebg-jade {
+  background-color: rgba(var(--ecol-jade), 100%);
+}
+
+.ebg-indigo {
+  background-color: rgba(var(--ecol-indigo), 100%);
+}
+
+.ebg-iris {
+  background-color: rgba(var(--ecol-iris), 100%);
+}
+
+.ebg-light-blue {
+  background-color: rgba(var(--ecol-light-blue), 100%);
+}
+
+.ebg-navy-blue {
+  background-color: rgba(var(--ecol-navy-blue), 100%);
+}
+
+.ebg-neon-blue {
+  background-color: rgba(var(--ecol-neon-blue), 100%);
+}
+
+.ebg-pastel-blue {
+  background-color: rgba(var(--ecol-pastel-blue), 100%);
+}
+
+.ebg-periwinkle {
+  background-color: rgba(var(--ecol-periwinkle), 100%);
+}
+
+.ebg-powder-blue {
+  background-color: rgba(var(--ecol-powder-blue), 100%);
+}
+
+.ebg-robin-egg-blue {
+  background-color: rgba(var(--ecol-robin-egg-blue), 100%);
+}
+
+.ebg-royal-blue {
+  background-color: rgba(var(--ecol-royal-blue), 100%);
+}
+
+.ebg-sapphire-blue {
+  background-color: rgba(var(--ecol-sapphire-blue), 100%);
+}
+
+.ebg-seafoam-green {
+  background-color: rgba(var(--ecol-seafoam-green), 100%);
+}
+
+.ebg-sky-blue {
+  background-color: rgba(var(--ecol-sky-blue), 100%);
+}
+
+.ebg-steel-blue {
+  background-color: rgba(var(--ecol-steel-blue), 100%);
+}
+
+.ebg-teal {
+  background-color: rgba(var(--ecol-teal), 100%);
+}
+
+.ebg-turquoise {
+  background-color: rgba(var(--ecol-turquoise), 100%);
+}
+
+.ebg-ultramarine {
+  background-color: rgba(var(--ecol-ultramarine), 100%);
+}
+
+.ebg-verdigris {
+  background-color: rgba(var(--ecol-verdigris), 100%);
+}
+
+.ebg-zaffre {
+  background-color: rgba(var(--ecol-zaffre), 100%);
+}
+
+.ebg-almond {
+  background-color: rgba(var(--ecol-almond), 100%);
+}
+
+.ebg-brass {
+  background-color: rgba(var(--ecol-brass), 100%);
+}
+
+.ebg-bronze {
+  background-color: rgba(var(--ecol-bronze), 100%);
+}
+
+.ebg-brown {
+  background-color: rgba(var(--ecol-brown), 100%);
+}
+
+.ebg-buff {
+  background-color: rgba(var(--ecol-buff), 100%);
+}
+
+.ebg-burgundy {
+  background-color: rgba(var(--ecol-burgundy), 100%);
+}
+
+.ebg-burnt-sienna {
+  background-color: rgba(var(--ecol-burnt-sienna), 100%);
+}
+
+.ebg-burnt-umber {
+  background-color: rgba(var(--ecol-burnt-umber), 100%);
+}
+
+.ebg-camel {
+  background-color: rgba(var(--ecol-camel), 100%);
+}
+
+.ebg-chestnut {
+  background-color: rgba(var(--ecol-chestnut), 100%);
+}
+
+.ebg-chocolate {
+  background-color: rgba(var(--ecol-chocolate), 100%);
+}
+
+.ebg-cinnamon {
+  background-color: rgba(var(--ecol-cinnamon), 100%);
+}
+
+.ebg-coffee {
+  background-color: rgba(var(--ecol-coffee), 100%);
+}
+
+.ebg-cognac {
+  background-color: rgba(var(--ecol-cognac), 100%);
+}
+
+.ebg-copper {
+  background-color: rgba(var(--ecol-copper), 100%);
+}
+
+.ebg-cordovan {
+  background-color: rgba(var(--ecol-cordovan), 100%);
+}
+
+.ebg-dark-brown {
+  background-color: rgba(var(--ecol-dark-brown), 100%);
+}
+
+.ebg-dark-red {
+  background-color: rgba(var(--ecol-dark-red), 100%);
+}
+
+.ebg-dark-tan {
+  background-color: rgba(var(--ecol-dark-tan), 100%);
+}
+
+.ebg-ecru {
+  background-color: rgba(var(--ecol-ecru), 100%);
+}
+
+.ebg-fallow {
+  background-color: rgba(var(--ecol-fallow), 100%);
+}
+
+.ebg-fawn {
+  background-color: rgba(var(--ecol-fawn), 100%);
+}
+
+.ebg-garnet {
+  background-color: rgba(var(--ecol-garnet), 100%);
+}
+
+.ebg-golden-brown {
+  background-color: rgba(var(--ecol-golden-brown), 100%);
+}
+
+.ebg-khaki {
+  background-color: rgba(var(--ecol-khaki), 100%);
+}
+
+.ebg-light-brown {
+  background-color: rgba(var(--ecol-light-brown), 100%);
+}
+
+.ebg-mahogany {
+  background-color: rgba(var(--ecol-mahogany), 100%);
+}
+
+.ebg-maroon {
+  background-color: rgba(var(--ecol-maroon), 100%);
+}
+
+.ebg-mocha {
+  background-color: rgba(var(--ecol-mocha), 100%);
+}
+
+.ebg-nude {
+  background-color: rgba(var(--ecol-nude), 100%);
+}
+
+.ebg-ochre {
+  background-color: rgba(var(--ecol-ochre), 100%);
+}
+
+.ebg-olive-green {
+  background-color: rgba(var(--ecol-olive-green), 100%);
+}
+
+.ebg-oxblood {
+  background-color: rgba(var(--ecol-oxblood), 100%);
+}
+
+.ebg-puce {
+  background-color: rgba(var(--ecol-puce), 100%);
+}
+
+.ebg-red-brown {
+  background-color: rgba(var(--ecol-red-brown), 100%);
+}
+
+.ebg-red-ochre {
+  background-color: rgba(var(--ecol-red-ochre), 100%);
+}
+
+.ebg-russet {
+  background-color: rgba(var(--ecol-russet), 100%);
+}
+
+.ebg-saddle-brown {
+  background-color: rgba(var(--ecol-saddle-brown), 100%);
+}
+
+.ebg-sand {
+  background-color: rgba(var(--ecol-sand), 100%);
+}
+
+.ebg-sienna {
+  background-color: rgba(var(--ecol-sienna), 100%);
+}
+
+.ebg-tan {
+  background-color: rgba(var(--ecol-tan), 100%);
+}
+
+.ebg-taupe {
+  background-color: rgba(var(--ecol-taupe), 100%);
+}
+
+.ebg-tuscan-red {
+  background-color: rgba(var(--ecol-tuscan-red), 100%);
+}
+
+.ebg-wheat {
+  background-color: rgba(var(--ecol-wheat), 100%);
+}
+
+.ebg-wine {
+  background-color: rgba(var(--ecol-wine), 100%);
+}
+
+.ebg-ash-gray {
+  background-color: rgba(var(--ecol-ash-gray), 100%);
+}
+
+.ebg-dark-gray {
+  background-color: rgba(var(--ecol-dark-gray), 100%);
+}
+
+.ebg-gray {
+  background-color: rgba(var(--ecol-gray), 100%);
+}
+
+.ebg-gunmetal-gray {
+  background-color: rgba(var(--ecol-gunmetal-gray), 100%);
+}
+
+.ebg-light-gray {
+  background-color: rgba(var(--ecol-light-gray), 100%);
+}
+
+.ebg-pewter {
+  background-color: rgba(var(--ecol-pewter), 100%);
+}
+
+.ebg-platinum {
+  background-color: rgba(var(--ecol-platinum), 100%);
+}
+
+.ebg-sage-green {
+  background-color: rgba(var(--ecol-sage-green), 100%);
+}
+
+.ebg-silver {
+  background-color: rgba(var(--ecol-silver), 100%);
+}
+
+.ebg-slate-gray {
+  background-color: rgba(var(--ecol-slate-gray), 100%);
+}
+
+.ebg-smoke {
+  background-color: rgba(var(--ecol-smoke), 100%);
+}
+
+.ebg-steel-gray {
+  background-color: rgba(var(--ecol-steel-gray), 100%);
+}
+
+.ebg-aquamarine {
+  background-color: rgba(var(--ecol-aquamarine), 100%);
+}
+
+.ebg-army-green {
+  background-color: rgba(var(--ecol-army-green), 100%);
+}
+
+.ebg-bright-green {
+  background-color: rgba(var(--ecol-bright-green), 100%);
+}
+
+.ebg-cadmium-green {
+  background-color: rgba(var(--ecol-cadmium-green), 100%);
+}
+
+.ebg-celadon {
+  background-color: rgba(var(--ecol-celadon), 100%);
+}
+
+.ebg-chartreuse {
+  background-color: rgba(var(--ecol-chartreuse), 100%);
+}
+
+.ebg-citrine {
+  background-color: rgba(var(--ecol-citrine), 100%);
+}
+
+.ebg-emerald-green {
+  background-color: rgba(var(--ecol-emerald-green), 100%);
+}
+
+.ebg-eucalyptus {
+  background-color: rgba(var(--ecol-eucalyptus), 100%);
+}
+
+.ebg-fern-green {
+  background-color: rgba(var(--ecol-fern-green), 100%);
+}
+
+.ebg-forest-green {
+  background-color: rgba(var(--ecol-forest-green), 100%);
+}
+
+.ebg-grass-green {
+  background-color: rgba(var(--ecol-grass-green), 100%);
+}
+
+.ebg-green {
+  background-color: rgba(var(--ecol-green), 100%);
+}
+
+.ebg-hunter-green {
+  background-color: rgba(var(--ecol-hunter-green), 100%);
+}
+
+.ebg-jungle-green {
+  background-color: rgba(var(--ecol-jungle-green), 100%);
+}
+
+.ebg-kelly-green {
+  background-color: rgba(var(--ecol-kelly-green), 100%);
+}
+
+.ebg-light-green {
+  background-color: rgba(var(--ecol-light-green), 100%);
+}
+
+.ebg-lime-green {
+  background-color: rgba(var(--ecol-lime-green), 100%);
+}
+
+.ebg-lincoln-green {
+  background-color: rgba(var(--ecol-lincoln-green), 100%);
+}
+
+.ebg-malachite {
+  background-color: rgba(var(--ecol-malachite), 100%);
+}
+
+.ebg-mint-green {
+  background-color: rgba(var(--ecol-mint-green), 100%);
+}
+
+.ebg-moss-green {
+  background-color: rgba(var(--ecol-moss-green), 100%);
+}
+
+.ebg-neon-green {
+  background-color: rgba(var(--ecol-neon-green), 100%);
+}
+
+.ebg-nyanza {
+  background-color: rgba(var(--ecol-nyanza), 100%);
+}
+
+.ebg-pastel-green {
+  background-color: rgba(var(--ecol-pastel-green), 100%);
+}
+
+.ebg-pear {
+  background-color: rgba(var(--ecol-pear), 100%);
+}
+
+.ebg-peridot {
+  background-color: rgba(var(--ecol-peridot), 100%);
+}
+
+.ebg-pistachio {
+  background-color: rgba(var(--ecol-pistachio), 100%);
+}
+
+.ebg-sea-green {
+  background-color: rgba(var(--ecol-sea-green), 100%);
+}
+
+.ebg-shamrock-green {
+  background-color: rgba(var(--ecol-shamrock-green), 100%);
+}
+
+.ebg-spring-green {
+  background-color: rgba(var(--ecol-spring-green), 100%);
+}
+
+.ebg-vegas-gold {
+  background-color: rgba(var(--ecol-vegas-gold), 100%);
+}
+
+.ebg-viridian {
+  background-color: rgba(var(--ecol-viridian), 100%);
+}
+
+.ebg-amber {
+  background-color: rgba(var(--ecol-amber), 100%);
+}
+
+.ebg-apricot {
+  background-color: rgba(var(--ecol-apricot), 100%);
+}
+
+.ebg-bisque {
+  background-color: rgba(var(--ecol-bisque), 100%);
+}
+
+.ebg-bright-orange {
+  background-color: rgba(var(--ecol-bright-orange), 100%);
+}
+
+.ebg-burnt-orange {
+  background-color: rgba(var(--ecol-burnt-orange), 100%);
+}
+
+.ebg-butterscotch {
+  background-color: rgba(var(--ecol-butterscotch), 100%);
+}
+
+.ebg-cadmium-orange {
+  background-color: rgba(var(--ecol-cadmium-orange), 100%);
+}
+
+.ebg-coral {
+  background-color: rgba(var(--ecol-coral), 100%);
+}
+
+.ebg-coral-pink {
+  background-color: rgba(var(--ecol-coral-pink), 100%);
+}
+
+.ebg-dark-orange {
+  background-color: rgba(var(--ecol-dark-orange), 100%);
+}
+
+.ebg-desert {
+  background-color: rgba(var(--ecol-desert), 100%);
+}
+
+.ebg-gamboge {
+  background-color: rgba(var(--ecol-gamboge), 100%);
+}
+
+.ebg-golden-yellow {
+  background-color: rgba(var(--ecol-golden-yellow), 100%);
+}
+
+.ebg-goldenrod {
+  background-color: rgba(var(--ecol-goldenrod), 100%);
+}
+
+.ebg-light-orange {
+  background-color: rgba(var(--ecol-light-orange), 100%);
+}
+
+.ebg-mango {
+  background-color: rgba(var(--ecol-mango), 100%);
+}
+
+.ebg-navajo-white {
+  background-color: rgba(var(--ecol-navajo-white), 100%);
+}
+
+.ebg-neon-orange {
+  background-color: rgba(var(--ecol-neon-orange), 100%);
+}
+
+.ebg-orange {
+  background-color: rgba(var(--ecol-orange), 100%);
+}
+
+.ebg-pastel-orange {
+  background-color: rgba(var(--ecol-pastel-orange), 100%);
+}
+
+.ebg-peach {
+  background-color: rgba(var(--ecol-peach), 100%);
+}
+
+.ebg-persimmon {
+  background-color: rgba(var(--ecol-persimmon), 100%);
+}
+
+.ebg-pink-orange {
+  background-color: rgba(var(--ecol-pink-orange), 100%);
+}
+
+.ebg-poppy {
+  background-color: rgba(var(--ecol-poppy), 100%);
+}
+
+.ebg-pumpkin-orange {
+  background-color: rgba(var(--ecol-pumpkin-orange), 100%);
+}
+
+.ebg-red-orange {
+  background-color: rgba(var(--ecol-red-orange), 100%);
+}
+
+.ebg-safety-orange {
+  background-color: rgba(var(--ecol-safety-orange), 100%);
+}
+
+.ebg-salmon {
+  background-color: rgba(var(--ecol-salmon), 100%);
+}
+
+.ebg-seashell {
+  background-color: rgba(var(--ecol-seashell), 100%);
+}
+
+.ebg-sunset-orange {
+  background-color: rgba(var(--ecol-sunset-orange), 100%);
+}
+
+.ebg-tangerine {
+  background-color: rgba(var(--ecol-tangerine), 100%);
+}
+
+.ebg-terra-cotta {
+  background-color: rgba(var(--ecol-terra-cotta), 100%);
+}
+
+.ebg-yellow-orange {
+  background-color: rgba(var(--ecol-yellow-orange), 100%);
+}
+
+.ebg-amaranth {
+  background-color: rgba(var(--ecol-amaranth), 100%);
+}
+
+.ebg-cerise {
+  background-color: rgba(var(--ecol-cerise), 100%);
+}
+
+.ebg-claret {
+  background-color: rgba(var(--ecol-claret), 100%);
+}
+
+.ebg-crimson {
+  background-color: rgba(var(--ecol-crimson), 100%);
+}
+
+.ebg-dark-pink {
+  background-color: rgba(var(--ecol-dark-pink), 100%);
+}
+
+.ebg-dusty-rose {
+  background-color: rgba(var(--ecol-dusty-rose), 100%);
+}
+
+.ebg-fuchsia {
+  background-color: rgba(var(--ecol-fuchsia), 100%);
+}
+
+.ebg-hot-pink {
+  background-color: rgba(var(--ecol-hot-pink), 100%);
+}
+
+.ebg-light-pink {
+  background-color: rgba(var(--ecol-light-pink), 100%);
+}
+
+.ebg-magenta {
+  background-color: rgba(var(--ecol-magenta), 100%);
+}
+
+.ebg-millennial-pink {
+  background-color: rgba(var(--ecol-millennial-pink), 100%);
+}
+
+.ebg-mulberry {
+  background-color: rgba(var(--ecol-mulberry), 100%);
+}
+
+.ebg-neon-pink {
+  background-color: rgba(var(--ecol-neon-pink), 100%);
+}
+
+.ebg-orchid {
+  background-color: rgba(var(--ecol-orchid), 100%);
+}
+
+.ebg-pastel-pink {
+  background-color: rgba(var(--ecol-pastel-pink), 100%);
+}
+
+.ebg-pastel-red {
+  background-color: rgba(var(--ecol-pastel-red), 100%);
+}
+
+.ebg-pink {
+  background-color: rgba(var(--ecol-pink), 100%);
+}
+
+.ebg-plum {
+  background-color: rgba(var(--ecol-plum), 100%);
+}
+
+.ebg-purple {
+  background-color: rgba(var(--ecol-purple), 100%);
+}
+
+.ebg-raspberry {
+  background-color: rgba(var(--ecol-raspberry), 100%);
+}
+
+.ebg-red-purple {
+  background-color: rgba(var(--ecol-red-purple), 100%);
+}
+
+.ebg-rose {
+  background-color: rgba(var(--ecol-rose), 100%);
+}
+
+.ebg-rose-gold {
+  background-color: rgba(var(--ecol-rose-gold), 100%);
+}
+
+.ebg-rose-red {
+  background-color: rgba(var(--ecol-rose-red), 100%);
+}
+
+.ebg-ruby-red {
+  background-color: rgba(var(--ecol-ruby-red), 100%);
+}
+
+.ebg-thistle {
+  background-color: rgba(var(--ecol-thistle), 100%);
+}
+
+.ebg-watermelon-pink {
+  background-color: rgba(var(--ecol-watermelon-pink), 100%);
+}
+
+.ebg-bright-purple {
+  background-color: rgba(var(--ecol-bright-purple), 100%);
+}
+
+.ebg-byzantium {
+  background-color: rgba(var(--ecol-byzantium), 100%);
+}
+
+.ebg-eggplant {
+  background-color: rgba(var(--ecol-eggplant), 100%);
+}
+
+.ebg-lavender {
+  background-color: rgba(var(--ecol-lavender), 100%);
+}
+
+.ebg-light-purple {
+  background-color: rgba(var(--ecol-light-purple), 100%);
+}
+
+.ebg-light-violet {
+  background-color: rgba(var(--ecol-light-violet), 100%);
+}
+
+.ebg-lilac {
+  background-color: rgba(var(--ecol-lilac), 100%);
+}
+
+.ebg-mauve {
+  background-color: rgba(var(--ecol-mauve), 100%);
+}
+
+.ebg-mauve-taupe {
+  background-color: rgba(var(--ecol-mauve-taupe), 100%);
+}
+
+.ebg-pastel-purple {
+  background-color: rgba(var(--ecol-pastel-purple), 100%);
+}
+
+.ebg-quartz {
+  background-color: rgba(var(--ecol-quartz), 100%);
+}
+
+.ebg-tyrian-purple {
+  background-color: rgba(var(--ecol-tyrian-purple), 100%);
+}
+
+.ebg-violet {
+  background-color: rgba(var(--ecol-violet), 100%);
+}
+
+.ebg-wisteria {
+  background-color: rgba(var(--ecol-wisteria), 100%);
+}
+
+.ebg-blood-red {
+  background-color: rgba(var(--ecol-blood-red), 100%);
+}
+
+.ebg-brick-red {
+  background-color: rgba(var(--ecol-brick-red), 100%);
+}
+
+.ebg-bright-red {
+  background-color: rgba(var(--ecol-bright-red), 100%);
+}
+
+.ebg-cadmium-red {
+  background-color: rgba(var(--ecol-cadmium-red), 100%);
+}
+
+.ebg-cardinal-red {
+  background-color: rgba(var(--ecol-cardinal-red), 100%);
+}
+
+.ebg-carmine {
+  background-color: rgba(var(--ecol-carmine), 100%);
+}
+
+.ebg-cherry {
+  background-color: rgba(var(--ecol-cherry), 100%);
+}
+
+.ebg-falu-red {
+  background-color: rgba(var(--ecol-falu-red), 100%);
+}
+
+.ebg-marsala {
+  background-color: rgba(var(--ecol-marsala), 100%);
+}
+
+.ebg-neon-red {
+  background-color: rgba(var(--ecol-neon-red), 100%);
+}
+
+.ebg-red {
+  background-color: rgba(var(--ecol-red), 100%);
+}
+
+.ebg-scarlet {
+  background-color: rgba(var(--ecol-scarlet), 100%);
+}
+
+.ebg-venetian-red {
+  background-color: rgba(var(--ecol-venetian-red), 100%);
+}
+
+.ebg-vermillion {
+  background-color: rgba(var(--ecol-vermillion), 100%);
+}
+
+.ebg-alabaster {
+  background-color: rgba(var(--ecol-alabaster), 100%);
+}
+
+.ebg-beige {
+  background-color: rgba(var(--ecol-beige), 100%);
+}
+
+.ebg-bone-white {
+  background-color: rgba(var(--ecol-bone-white), 100%);
+}
+
+.ebg-cornsilk {
+  background-color: rgba(var(--ecol-cornsilk), 100%);
+}
+
+.ebg-cream {
+  background-color: rgba(var(--ecol-cream), 100%);
+}
+
+.ebg-eggshell {
+  background-color: rgba(var(--ecol-eggshell), 100%);
+}
+
+.ebg-ivory {
+  background-color: rgba(var(--ecol-ivory), 100%);
+}
+
+.ebg-linen {
+  background-color: rgba(var(--ecol-linen), 100%);
+}
+
+.ebg-off-white {
+  background-color: rgba(var(--ecol-off-white), 100%);
+}
+
+.ebg-parchment {
+  background-color: rgba(var(--ecol-parchment), 100%);
+}
+
+.ebg-pearl {
+  background-color: rgba(var(--ecol-pearl), 100%);
+}
+
+.ebg-vanilla {
+  background-color: rgba(var(--ecol-vanilla), 100%);
+}
+
+.ebg-white {
+  background-color: rgba(var(--ecol-white), 100%);
+}
+
+.ebg-bright-yellow {
+  background-color: rgba(var(--ecol-bright-yellow), 100%);
+}
+
+.ebg-cadmium-yellow {
+  background-color: rgba(var(--ecol-cadmium-yellow), 100%);
+}
+
+.ebg-canary-yellow {
+  background-color: rgba(var(--ecol-canary-yellow), 100%);
+}
+
+.ebg-dark-yellow {
+  background-color: rgba(var(--ecol-dark-yellow), 100%);
+}
+
+.ebg-flax {
+  background-color: rgba(var(--ecol-flax), 100%);
+}
+
+.ebg-gold {
+  background-color: rgba(var(--ecol-gold), 100%);
+}
+
+.ebg-icterine {
+  background-color: rgba(var(--ecol-icterine), 100%);
+}
+
+.ebg-jasmine {
+  background-color: rgba(var(--ecol-jasmine), 100%);
+}
+
+.ebg-lemon-yellow {
+  background-color: rgba(var(--ecol-lemon-yellow), 100%);
+}
+
+.ebg-maize {
+  background-color: rgba(var(--ecol-maize), 100%);
+}
+
+.ebg-mustard-yellow {
+  background-color: rgba(var(--ecol-mustard-yellow), 100%);
+}
+
+.ebg-naples-yellow {
+  background-color: rgba(var(--ecol-naples-yellow), 100%);
+}
+
+.ebg-pastel-yellow {
+  background-color: rgba(var(--ecol-pastel-yellow), 100%);
+}
+
+.ebg-saffron {
+  background-color: rgba(var(--ecol-saffron), 100%);
+}
+
+.ebg-yellow {
+  background-color: rgba(var(--ecol-yellow), 100%);
+}/*# sourceMappingURL=Colors.css.map */

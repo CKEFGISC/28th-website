@@ -131,9 +131,11 @@ Orz 學術長好電！可是他常常在裝弱，曾寫出「椒麻雞器人」�
             name="世宗"
             tags="免修仔, 新竹競走代表隊, 團購訂單"
             description={`
-「」 等一下我打不完 // TODO: 把這裡打完
+「我是有考免修，但有沒有通過是另一回事」── 世宗
 
-那據說 OJ 是他架的
+那麼新的 OJ 是他架的，特別強……  
+我推測因為世宗每科都免修，所以把我不會的東西都學會了
+順帶一提，世宗是明世宗，世宗大王 🛐
             `}
             imgSrc="/images/team/ckeisc/little_tsai.png"
             imgSrc2="/images/team/ckeisc/little_tsai_2.png"
@@ -145,7 +147,7 @@ Orz 學術長好電！可是他常常在裝弱，曾寫出「椒麻雞器人」�
             description={`
 「我是可愛的女孩子」── 佑佑
 
-如你所見，這個人是甲甲！除了是甲以外，也是個社交牛逼，常常會跑去跟學弟妹聊天  
+如你所見，這個人是甲甲！除了是甲甲以外，也是個社交牛逼，常常會跑去跟學弟妹聊天  
 身邊總是帶著一隻名為「短短」，沒有脖子的長頸鹿
 `}
             imgSrc="/images/team/ckeisc/yo_yo.png"
@@ -155,21 +157,36 @@ Orz 學術長好電！可是他常常在裝弱，曾寫出「椒麻雞器人」�
             role="學術"
             name="黑黑"
             tags="嘿黑黑, 阿宅"
-            description={Placeholder()}
+            description={`
+「不知道為什麼他們看到我都一直在那邊嘿嘿嘿」── 黑黑
+
+上完一堂社課後，下禮拜就有學弟在問上硬體的帥學長叫什麼？  
+看來是來累積粉絲的
+            `}
             imgSrc="/images/team/ckeisc/black_black.png"
           />
           <Person
             role="學術"
             name="YK"
             tags="說話的藝術, 善用工具, 摩根勒菲"
-            description={Placeholder()}
+            description={`
+「我是建電最弱兼最邊緣」── YK (Obviously lying)
+
+顯然的沒有比某晴弱，YK 是個超帥的人  
+很會當關主，講一堆很詭異的台詞還可以不笑出來
+            `}
             imgSrc="/images/team/ckeisc/mo_gain.png"
           />
           <Person
             role="學術"
             name="Jimmy"
             tags="AI 大佬, Jimmy Face, Jimmy Flower"
-            description={Placeholder()}
+            description={`
+「我筆電就跑不了 Blender 是要怎麼備課」── Jimmy
+
+這是 Jimmy Face: 😑  
+這位電神聽說在一週內，把 AI 學會，然後做了一份超強簡報，就上幹了
+            `}
             imgSrc="/images/team/ckeisc/jimmy_flower.png"
           />
           <Person
@@ -179,7 +196,8 @@ Orz 學術長好電！可是他常常在裝弱，曾寫出「椒麻雞器人」�
             description={`
 「顯然是佑佑在搞」── 晴
 
-此人會用 JavaScript 做任何除了寫 OJ 以外事情，畢竟寫 OJ 不能用 JavaScript  
+這我  
+會用 JavaScript 做任何除了寫 OJ 以外的任何事情，畢竟寫 OJ 不能用 JavaScript  
 那麼寫 C++ 的時候，就會想要實做一堆 JavaScript 有的模板，所以寫一個 Hello World 會有 2000 多行，其中包括了稀疏表和線段樹模板
             `}
             imgSrc="/images/team/ckeisc/star_huey.png"
@@ -189,42 +207,74 @@ Orz 學術長好電！可是他常常在裝弱，曾寫出「椒麻雞器人」�
             role="網管"
             name="六哥"
             tags="陳亮延, 吉他人, 偽德文班"
-            description={Placeholder()}
+            description={`
+「去寫社網！」── 六哥
+
+常常會聽到六哥在叫晴去寫社網，畢竟前端的東西六哥已經寫得差不多了  
+之前甚至還寫了建電社史網，真是超強網管  
+據說放學時會在黑板寫一些莫名奇妙的東西（比如說日文五十音），重點是他其實是德文班
+            `}
             imgSrc="/images/team/ckeisc/six_bro.png"
           />
           <Person
             role="美宣"
             name="Secant"
             tags="超強美宣, 正割函數, 悠遊卡加值機"
-            description={Placeholder()}
+            description={`
+「他這畫面回不去了啦」── Secant
+
+幹訓的時候，每天早操前都會去玩悠遊卡加值機，把他的 Windows 桌面叫出來 XD  
+不過其實 Secant&nbsp;<s>&nbsp;不看本人的話&nbsp;</s>&nbsp;超有氣質的  
+尤其能寫出超級美的字 🛐
+            `}
             imgSrc="/images/team/ckeisc/triangle_math.png"
           />
           <Person
             role="美宣 & 公關"
             name="李曄"
             tags="迷因人, 強悍的臂力, 活動道具破壞者"
-            description={Placeholder()}
+            description={`
+「社辦真的很熱欸，誰要在那裡開會啊？」── 李曄
+
+不過開會的時候他也在滑迷因，所以應該根本沒差  
+長得特別高，但有點猴，力氣特別大  
+曾在活動試跑時直接把道具打壞……
+            `}
             imgSrc="/images/team/ckeisc/lee_ya.png"
           />
           <Person
             role="公關"
             name="小毅"
             tags="美食社, 大暖男"
-            description={Placeholder()}
+            description={`
+「如果只喜歡女生那選擇不就少一半了」── 小毅
+
+怎麼又有甲？不過小毅是個大暖男，而且同時是建中美食社副社  
+又會做菜又長得帥，大家可排隊以加入他的粉絲團
+            `}
             imgSrc="/images/team/ckeisc/little_yee.png"
           />
           <Person
             role="總務"
             name="准哥"
             tags="專情男人, 打地鼠網頁遊戲, 皮卡丘打排球"
-            description={Placeholder()}
+            description={`
+「喔你要報帳…… 但我今天沒有錢，下次一定！」── 准哥
+
+走在路上會和佑佑牽手！？看來又有甲  
+這張粉紅泡泡的照片可是他自己給我的喔
+            `}
             imgSrc="/images/team/ckeisc/volleyball_winner.png"
           />
           <Person
             role="衛生"
             name="無尾熊"
             tags="爆肝王, 咖啡因成癮, 迷因梗大師"
-            description={Placeholder()}
+            description={`
+「蛤你說這張照片看起來像擺拍的？事實上他就是啊」── 無尾熊
+
+// todo: i'm here
+            `}
             imgSrc="/images/team/ckeisc/no_tail.png"
           />
           <Person
