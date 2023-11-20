@@ -4,7 +4,7 @@ import Brand from "./components/Brand";
 export default function Footer() {
   return (
     <footer>
-      <div className="footer-copyright"><small>Copyright © {new Date().getFullYear()} CKEFGISC 建北電資 28th</small></div>
+      <div className="footer-copyright" onClick={() => window.location.assign("/#/ctf/lIA0zmzYSbgSlBUzwjo7hr5y/")}><small>Copyright © {new Date().getFullYear()} CKEFGISC 建北電資 28th</small></div>
       <div className="footer-brands">
         <Brand 
           title="建中電研 43rd Instagram"

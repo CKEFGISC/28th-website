@@ -1,0 +1,14 @@
+.flag + .copy-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  opacity: 80%;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.flag + .copy-icon:hover {
+  opacity: 90%;
+}

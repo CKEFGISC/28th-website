@@ -67,7 +67,7 @@ export function ErrorPage() {
   const error = useRouteError();
 
   return (
-    <div id="error-page" className="container py-5 d-flex flex-column align-items-center">
+    <div id="error-page" className="container py-5 d-flex flex-column align-items-center flex-grow-1">
       <h1>Oops!</h1>
       <p>Sorry, an unexpected error has occurred.</p>
       <p>
