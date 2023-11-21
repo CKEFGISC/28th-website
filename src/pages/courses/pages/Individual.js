@@ -113,7 +113,6 @@ function slidesListInit() {
 
 function slidesContentsOnScroll(ev) {
   let targetElement;
-  console.log("-----")
   $(ev.target).children().each((i, e) => {
     $(`#to-${e.id}`).removeClass("active");
     if (targetElement) return;
