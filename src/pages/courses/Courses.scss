@@ -25,11 +25,91 @@
   .course > .slides, .course > img {
     width: 600px;
     height: fit-content;
-    max-width: 90dvw;
+    max-width: 80dvw;
   }
 
   .course > .description {
     margin-left: 0 !important;
     margin-top: 20px;
+  }
+}
+.slides-container {
+  border: 3px solid var(--color-lightgray);
+  border-radius: 8px;
+  display: flex;
+  height: 30em;
+  overflow: hidden;
+}
+
+.slides-list {
+  width: 16em;
+}
+
+.slides-list > nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.slides-list, .slides-contents {
+  overflow-y: auto;
+  padding: 0 1em;
+  margin: 1.6em 0.6em;
+}
+
+.slides-vertical-line {
+  border: 2px solid var(--color-lightgray);
+  border-radius: 1px;
+  margin: 1.6em 0em;
+}
+
+.slides-contents {
+  flex-grow: 1;
+}
+
+.slides-contents h4 {
+  margin: 1em 0;
+}
+
+.slides-contents h4:first-child {
+  margin-top: 0;
+}
+
+.slides-list > nav > span {
+  // border: 2px solid red;
+  border-radius: 8px;
+  padding: 0.5em;
+  margin-bottom: 0.4em;
+  transition: background-color 200ms;
+  cursor: pointer;
+}
+
+.slides-list > nav > span.active {
+  background-color: var(--color-secondary);
+}
+
+@media only screen and (max-width: 768px) {
+  .slides-container {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .slides-list {
+    width: auto;
+    height: max-content;
+    overflow-y: unset;
+  }
+
+  .slides-list > nav {
+    height: max-content;
+    flex-direction: row;
+  }
+
+  .slides-list > nav > span {
+    margin-bottom: 0;
+    margin-right: 0.4em;
+  }
+
+  .slides-contents {
+    height: 65dvw;
   }
 }
