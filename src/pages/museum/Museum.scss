@@ -45,4 +45,9 @@
   .museum-item .vertical-line {
     display: none;
   }
+
+  .museum-item img {
+    border: 2px solid var(--color-lightgray);
+    border-radius: 3px;
+  }
 }

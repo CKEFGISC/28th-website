@@ -57,9 +57,9 @@
 }
 
 .slides-vertical-line {
-  border: 2px solid var(--color-lightgray);
-  border-radius: 1px;
-  margin: 1.6em 0em;
+  border: 1.5px solid var(--color-lightgray);
+  border-radius: 1.5px;
+  margin: 1.6em 0;
 }
 
 .slides-contents {
@@ -107,6 +107,10 @@
   .slides-list > nav > span {
     margin-bottom: 0;
     margin-right: 0.4em;
+  }
+
+  .slides-vertical-line {
+    margin: 0 1.6em;
   }
 
   .slides-contents {

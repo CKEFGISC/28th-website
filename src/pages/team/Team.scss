@@ -151,7 +151,8 @@
 }
 
 .person .description { 
-	margin-left: 20px; 
+	margin-left: 20px;
+	width: 42em;
 	max-width: 50vw;
 }
 
@@ -161,16 +162,17 @@
 		align-items: center;
 	}
 
-  .person > img {
-    width: 500px;
-    height: 500px;
+	.person > img, .person > .description {
+    width: 360px;
 		max-width: 80dvw;
+	}
+
+  .person > img {
+    height: 360px;
 		max-height: 80dvw;
   }
 
   .person > .description {
-    width: 500px;
-		max-width: 80dvw;
     margin-left: 0 !important;
     margin-top: 20px;
   }
