@@ -62,6 +62,15 @@ export default function Museum() {
             直到 2023 年，終於在建電中出現了願意整理這些資料的一群人，開始挖掘往年的資料。透過學長姐的幫助，終於在雜亂的資料中整理出頭緒，建電的歷史正重新被寫下。
           </p>
         </MuseumItem>
+        <MuseumItem imgSrc="/images/museum/iscoj.png" alt="History of CKEISC website">
+          <TitleLink url="https://iscoj.fg.tp.edu.tw/">ISCOJ</TitleLink>
+          <p>
+            建北電資的社員非常喜歡寫演算法題目，理所當然地我們有自己的線上評測系統，稱作 ISCOJ。不過 <a href="https://fgiscoj.fg.tp.edu.tw/" target="_blank">舊的 OJ</a> 實在太難用了，於是今年 AaW 和世宗架好了新的 OJ。
+          </p>
+          <p>
+            此 OJ 架設於北一女的伺服器。因為使用 <a href="https://tioj.ck.tp.edu.tw/" target="_blank">TIOJ</a> 模板，外觀不是特別漂亮，可能還有改進的空間……
+          </p>
+        </MuseumItem>
       </div>
     </section>
   </>);
