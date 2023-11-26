@@ -1,8 +1,11 @@
 import React from "react";
 
+import "../Courses.scss";
+
 import Loading from "../../../utils/Loading";
 import SectionTitle from "../../../utils/SectionTitle";
 
+import { switchPageAnimation } from "../../../utils/Page";
 import CourseIntro from "../components/CourseIntro";
 
 import shortDescriptionPath from "../descriptions/short.md";
@@ -11,6 +14,8 @@ export default function CourseList() {
   const [ text, setText ] = React.useState();
 
   React.useEffect(() => {
+    switchPageAnimation();
+
     fetch(shortDescriptionPath)
       .then(response => response.text())
       .then(textContent => setText(textContent));
@@ -29,39 +34,40 @@ export default function CourseList() {
             imgSrc="/images/courses/web.avif"
             content={text.split("<%-== next ==-%>")[0]}
             btnColor="crimson"
-            href="?view=web"
+            href="/web/"
           />
           <CourseIntro
             title="Python"
             imgSrc="/images/courses/python.jpg"
             content={text.split("<%-== next ==-%>")[1]}
             btnColor="gamboge"
-            href="?view=python"
+            href="/python/"
           />
           <CourseIntro
             title="遊戲設計"
             imgSrc="/images/courses/game_design.webp"
             content={text.split("<%-== next ==-%>")[2]}
             btnColor="success"
-            href="?view=game_design"
+            href="/game_design/"
           />
           <CourseIntro
             title="Blender"
             imgSrc="/images/courses/blender.jpg"
             content={text.split("<%-== next ==-%>")[3]}
             btnColor="iris"
-            href="?view=blender"
+            href="/blender/"
           />
           <CourseIntro
             title="演算法"
             imgSrc="/images/courses/algorithm.jpg"
             content={text.split("<%-== next ==-%>")[4]}
             btnColor="orchid"
-            href="?view=algorithm"
+            href="/algorithm/"
           />
-        </>) : (
+        </>) : (<>
           <Loading />
-        )}
+          <div style={{ height: "100dvh" }}></div>
+        </>)}
       </div>
     </section>
   </>);

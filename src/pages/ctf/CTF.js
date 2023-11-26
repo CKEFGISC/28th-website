@@ -78,7 +78,7 @@ export default function CTF() {
           </code></pre></h3></div>
           <div>
             如果你不知道這是什麼，可以參考
-            <a href="https://iscoj.fg.tp.edu.tw/problems/4548" target="_blank"><u>這裡</u></a>
+            <a href="https://iscoj.fg.tp.edu.tw/problems/4548" target="_blank" rel="noreferrer"><u>這裡</u></a>
           </div>
         </div>
       ) : (

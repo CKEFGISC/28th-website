@@ -1,6 +1,8 @@
 import React from "react";
 import $ from "jquery";
 
+import "../Courses.scss";
+
 import CourseDetails from "../components/CourseDetails";
 
 import longDescriptionPath from "../descriptions/long.md";
@@ -10,6 +12,7 @@ import Placeholder from "../../../utils/Placeholder";
 import { switchPageAnimation } from "../../../utils/Page";
 import Slides from "../components/Slides";
 import SectionTitle from "../../../utils/SectionTitle";
+import { useParams } from "react-router-dom";
 
 function setContent(index, view, textContent, setText, setSlides) {
   var theContent = textContent.split("<%-== next ==-%>")[index];
@@ -124,7 +127,11 @@ function slidesContentsOnScroll(ev) {
   $(`#to-${targetElement.id}`).addClass("active");
 }
 
-export default function CourseIndividual(props) {
+export default function CourseIndividual() {
+  const { id: courseId } = useParams();
+
+  const index = [ "web", "python", "game_design", "blender", "algorithm" ].indexOf(courseId);
+  
   const [text, setText] = React.useState();
   const [slides, setSlides] = React.useState();
 
@@ -133,8 +140,13 @@ export default function CourseIndividual(props) {
 
     fetch(longDescriptionPath)
       .then(response => response.text())
-      .then(textContent => setContent(props.index, props.view, textContent, setText, setSlides));
-  }, [ props ]);
+      .then(textContent => setContent(index, courseId, textContent, setText, setSlides));
+  }, [ index, courseId ]);
+
+  if (index === -1) {
+    window.location.replace("#/courses");
+    return (<></>);
+  }
 
   return (<>
     <section id="title-bar">

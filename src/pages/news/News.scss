@@ -1,17 +1,34 @@
-// fix 
-#news-accordion .accordion-button:focus {
-  box-shadow: none !important;
+#list-news > .container, #individual-news > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-// background
-#news-accordion .accordion-button:not(.collapsed) {
-  background: var(--color-primary-soft);
-}
-#news-accordion .accordion-body, #news-accordion .accordion-button:is(.collapsed) {
-  background: var(--color-white);
+.news-list {
+  width: 814px;
+  min-height: 50dvh;
 }
 
-// fix title text color
-#news-accordion .accordion-button:not(.collapsed) {
-  color: var(--color-dark);
+.news-list hr {
+  opacity: 1;
+  border: 2px solid var(--color-lightgray);
+  border-radius: 2px;
+}
+
+.news-section {
+  width: 814px;
+  border-radius: 10px;
+  padding: 4em;
+  box-shadow: 0 0 10px -3px var(--color-dark);
+}
+
+#list-news .page-link {
+  background-color: unset;
+  color: unset;
+  &:hover {
+    background: var(--color-white-soft)
+  }
+  &:focus {
+    box-shadow: none;
+  }
 }

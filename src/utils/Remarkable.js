@@ -1,25 +1,18 @@
-import ReactRemarkable from "react-remarkable";
-import $ from "jquery";
+import { Remarkable } from "remarkable";
+import rkatex from "remarkable-katex";
 
 import "./Remarkable.scss";
 
-function allAnchorTargetBlank() {
-  $(".markdown a").attr("target", "_blank");
-}
+var md = new Remarkable({
+  html: true,               // Enable HTML tags in source
+  xhtmlOut: true,           // Use "/" to close single tags (<br />)
+  breaks: false,            // Convert "\n" in paragraphs into <br>
+  langPrefix: "language-",  // CSS language prefix for fenced blocks
+});
+md.use(rkatex);
 
 export default function Markdown(props) {
-  return (
-    <div className="markdown" onClick={allAnchorTargetBlank}>
-      <ReactRemarkable
-        source={props.content || props.children}
-        options={{
-          html: true,               // Enable HTML tags in source
-          xhtmlOut: true,           // Use "/" to close single tags (<br />)
-          breaks: false,            // Convert "\n" in paragraphs into <br>
-          langPrefix: "language-",  // CSS language prefix for fenced blocks
-        }}
-        container="div"
-      />
-    </div>
-  );
+  const content = props.content || props.source || props.children || "";
+
+  return <div className="markdown" dangerouslySetInnerHTML={{ __html: md.render(content) }} ></div>
 }

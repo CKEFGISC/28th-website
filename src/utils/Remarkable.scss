@@ -62,10 +62,14 @@
 
 // margin of headings
 .markdown :is(h1, h2, h3, h4, h5, h6) {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 // .markdown a {
 //   text-decoration: underline;
 //   text-underline-offset: 2px;
 // }
+
+.katex-html {
+  display: none;
+}

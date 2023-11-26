@@ -277,8 +277,7 @@ $colors: (
   }
 }
 
-@each $name,
-$col in $colors {
+@each $name, $col in $colors {
   .bg-#{$name} {
     background-color: rgba(var(--ecol-#{$name}), 100%);
   }

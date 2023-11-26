@@ -19,8 +19,8 @@ function MuseumItem(props) {
 
 function TitleLink(props) {
   return (
-    <a href={props.url} target="_blank">
-      <h4>{props.children}&nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></h4>
+    <a href={props.url} target="_blank" rel="noreferrer">
+      <h4>{props.children}&nbsp;&nbsp;<i className="fa-solid fa-arrow-up-right-from-square fa-xs"></i></h4>
     </a>
   )
 }
@@ -48,7 +48,7 @@ export default function Museum() {
           </p>
           <p>
             雖然有學長姊的範本可以借鑑，不過因為他是笨，花了大半個暑假也沒有什麼進度。
-            不過在某一天意外學會了 <a href="https://react.dev/" target="_blank">React</a> 之後，事情變得不同了。
+            不過在某一天意外學會了 <a href="https://react.dev/" target="_blank" rel="noreferrer">React</a> 之後，事情變得不同了。
             有了進階網頁框架的強大功能，晴只需要把六哥寫好的前端網頁做成模板整理，接上 Router！於是 28<Up>th</Up> 社網就這麼誕生了……
           </p>
         </MuseumItem>
@@ -65,10 +65,10 @@ export default function Museum() {
         <MuseumItem imgSrc="/images/museum/iscoj.png" alt="History of CKEISC website">
           <TitleLink url="https://iscoj.fg.tp.edu.tw/">ISCOJ</TitleLink>
           <p>
-            建北電資的社員非常喜歡寫演算法題目，理所當然地我們有自己的線上評測系統，稱作 ISCOJ。不過 <a href="https://fgiscoj.fg.tp.edu.tw/" target="_blank">舊的 OJ</a> 實在太難用了，於是今年 AaW 和世宗架好了新的 OJ。
+            建北電資的社員非常喜歡寫演算法題目，理所當然地我們有自己的線上評測系統，稱作 ISCOJ。不過 <a href="https://fgiscoj.fg.tp.edu.tw/" target="_blank" rel="noreferrer">舊的 OJ</a> 實在太難用了，於是今年 AaW 和世宗架好了新的 OJ。
           </p>
           <p>
-            此 OJ 架設於北一女的伺服器。因為使用 <a href="https://tioj.ck.tp.edu.tw/" target="_blank">TIOJ</a> 模板，外觀不是特別漂亮，可能還有改進的空間……
+            此 OJ 架設於北一女的伺服器。因為使用 <a href="https://tioj.ck.tp.edu.tw/" target="_blank" rel="noreferrer">TIOJ</a> 模板，外觀不是特別漂亮，可能還有改進的空間……
           </p>
         </MuseumItem>
       </div>
