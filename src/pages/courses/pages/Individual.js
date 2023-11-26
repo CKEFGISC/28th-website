@@ -51,15 +51,15 @@ function setContent(index, view, textContent, setText, setSlides) {
         <h4 id="third">基礎語法 2</h4>
         <Slides url="https://slides.com/d11130110/minimal/" />
         <h4 id="fourth">Function</h4>
-        <Slides url="https://slides.com/ck1110793/python_function" />
+        <Slides url="https://slides.com/ck1110793/python_function/" />
         <h4 id="fifth">OOP & Module</h4>
-        <Slides url="https://slides.com/ykchiu/python-oop/fullscreen#/python-5-oop-and-module" />
+        <Slides url="https://slides.com/ykchiu/python-oop/fullscreen#/python-5-oop-and-module/" />
         <h4 id="sixth">File IO</h4>
-        <Slides url="https://slides.com/ck1110793/python_file_io" />
+        <Slides url="https://slides.com/ck1110793/python_file_io/" />
       </>,
       "game_design": <>
         <h4 id="pico-8">Pico-8</h4>
-        <Slides url="https://slides.com/star_huey/game" />
+        <Slides url="https://slides.com/star_huey/game/" />
       </>,
       "blender": <>
         <h4 id="first">Blender 1</h4>
@@ -79,9 +79,9 @@ function setContent(index, view, textContent, setText, setSlides) {
         <h4 id="second">C++ 語法 2</h4>
         <Slides url="https://slides.com/cjtsai/algo-1/" />
         <h4 id="third">C++ 語法 3 - 複雜度 & 一些 STL</h4>
-        <Slides url="https://slides.com/stella-a/deck-f81f94/" />
+        <Slides url="https://slides.com/ckeisc807/algo2/" />
         <h4 id="fourth">C++ 語法 4 - 更多 STL</h4>
-        <Slides url="https://slides.com/ganyumywife/algo-3" />
+        <Slides url="https://slides.com/ganyumywife/algo-3/" />
         <h4 id="fifth">演算法 1 - 枚舉、貪婪、二分搜 & 分治</h4>
         <Slides url="https://slides.com/cjtsai/algo-basic/" />
       </>
