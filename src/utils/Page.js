@@ -2,6 +2,7 @@ import React from "react";
 import { useRouteError } from "react-router-dom";
 import $ from "jquery";
 import Offcanvas from "../offcanvas/OffCanvas";
+import { Helmet } from "react-helmet";
 
 export function handleFadeIn() {
   $(".fade-in.hiding").each((i, element) => {
@@ -46,7 +47,7 @@ export function switchPageAnimation() {
 
 export default function Page(props) {
   React.useEffect(() => {
-    document.title = `${props.title} | 建北電資 28th` || "";
+    document.title = `${props.title} | 建北電資 28th`;
 
     switchPageAnimation();
 
@@ -56,6 +57,10 @@ export default function Page(props) {
     window.addEventListener("load", windowOnLoad);
   }, [ props.title ]);
   return (<>
+    <Helmet>
+      <meta property="og:title" content={`${props.title} | 建北電資 28th`} />
+      <meta property="og:url" content={document.URL} />
+    </Helmet>
     <div className="page-content-wrapper" onLoad={handleFadeIn}>
       {props.children}
     </div>

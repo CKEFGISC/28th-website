@@ -1,10 +1,15 @@
 import ReactRemarkable from "react-remarkable";
+import $ from "jquery";
 
 import "./Remarkable.scss";
 
+function allAnchorTargetBlank() {
+  $(".markdown a").attr("target", "_blank");
+}
+
 export default function Markdown(props) {
   return (
-    <div className="markdown">
+    <div className="markdown" onClick={allAnchorTargetBlank}>
       <ReactRemarkable
         source={props.content || props.children}
         options={{

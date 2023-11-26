@@ -59,3 +59,12 @@
   background: var(--color-lightgray);
   opacity: 1;
 }
+
+// margin of headings
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+  margin-bottom: 1rem;
+}
+
+.markdown a {
+  
+}
