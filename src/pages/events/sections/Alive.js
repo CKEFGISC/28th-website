@@ -27,7 +27,7 @@ export default function Alive() {
           description="建北電資聯合交接茶會。茶會中，我們廣邀各校資訊性社團的同學來參加。這也是建北電資主要的外交活動。除了社交外，這也是正式的幹部交接儀式，新的幹部上任了，也是學長姊們幹部生涯的尾聲。歡迎大家一起來見證幹部的世代交替！"
         />
         <EventIntro
-          imgSrc={null}
+          imgSrc="/images/events/summer.png"
           imgText="2023 聯合暑訓"
           title="暑訓"
           time="八月"
