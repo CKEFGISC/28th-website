@@ -8,7 +8,7 @@ export default function Slides(props) {
       width={props.width || 560}
       height={props.height || 410} 
       style={{ borderRadius: 6, maxWidth: "98%", maxHeight: "50dvw" }}
-      allowFullScreen
+      allow="fullscreen"
     ></iframe>
   )
 }
