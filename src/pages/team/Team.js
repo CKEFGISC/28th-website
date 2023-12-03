@@ -1,8 +1,6 @@
 import $ from "jquery";
 import React from "react";
 
-import Placeholder from "../../utils/Placeholder";
-
 import "./Team.scss";
 
 import Person from "./components/Person";
@@ -129,7 +127,7 @@ Cc 從國中就屬於瘋癲類型，桌子曾經亂到被班導倒出來。
 從來沒出席過建北電資活動的 807，因為上機考破台就直接當上了學術長。
 
 身為程式菜雞的我們只能在一旁向他膜拜啊！他的程式語法毒瘤程度也是驚為天人，都用逗號來取代分號，
-並把 if else 都塞在同一行。隔壁社學術長詢問他的時候，他這樣回答「這東西不是很正常嗎? 我都這樣寫耶。」
+並把 if else 都塞在同一行。隔壁社學術長詢問他的時候，他這樣回答「這東西不是很正常嗎？ 我都這樣寫耶。」
 
 不過他也是個腦裡只有 vim 的單純男子。對了，807 這個稱號是一串你可以從他制服上看到的密碼。
             `}
@@ -342,77 +340,123 @@ Secant 是標準建中猴的代表，例如他曾經把北一女點餐機的 Win
             role="社長"
             name="鈉粒"
             tags="瘋癲, 超大貓派, 熱情"
-            description={Placeholder()}
+            description={`
+我們的社長是一位極度"活潑"的人，她一興奮起來語言內容就會變成「喵喵喵嗚嗚嗚嗚嗚嘿嘿嘿嘿嘿」的奇怪狀聲詞，
+據她朋友說，鈉粒的瘋癲是會傳染的，跟她混久了，周圍人的心智年齡會降到七歲，迷迷濛濛的不可思議
+            `}
             imgSrc="/images/team/fgisc/na_li.jpeg"
           />
           <Person
             role="副社長"
             name="七芒星"
             tags="溫柔學姊 ⊙﹏⊙, 周邊, 水巷茶弄"
-            description={Placeholder()}
+            description={`
+對陌生人與朋友的態度判若兩人，對前者是極為有禮貌、矜持的外交大使，請、謝謝、對不起一個都不會落，
+對於後者呢？各種嫌棄、嘲笑、敏蓁式白眼，但她的朋友都知道，這代表著成功成為她的好友了。
+雖然敏蓁會各種讓人自我懷疑但是當朋友需要幫忙時她也是最靠普的存在！
+            `}
             imgSrc="/images/team/fgisc/mitis_sister.jpg"
           />
           <Person
             role="學術長"
             name="企鵝"
             tags="企鵝為什麼不會飛, python大師, 超級冷靜"
-            description={Placeholder()}
+            description={`
+根本是沉穩的代表人！
+
+只要看到企鵝出場，不管情況多危及都能讓人冷靜下來，她也是支持行朋友，當你沮喪或迷茫時，雖然可能不行給出解決方法，
+但她會拍拍你的頭跟你說加油，總是讓人感受到滿滿的溫暖。
+            `}
             imgSrc="/images/team/fgisc/chi_goose.png"
           />
           <Person
             role="學術"
             name="小卡"
             tags="食研社社長, 氣質, 抹茶！手搖飲！"
-            description={Placeholder()}
+            description={`
+超強地社成員，她不只是學術還是食研社社長！兩個超忙幹部她都能一肩扛起
+
+身為網頁講師，小卡也為我們寫了課程簡報索引網頁，也為社課預約系統貢獻心力，太佩服了
+
+而且小卡還是忠實的抹茶粉！只要是跟抹茶相關她都愛！
+            `}
             imgSrc="/images/team/fgisc/little_ca.jpg"
           />
           <Person
             role="學術"
             name="沛沛"
             tags="武俠粉, 文靜, 去自習室不預約"
-            description={Placeholder()}
+            description={`
+沛沛身為熱愛學習的超好學生，非常喜歡在段考前去自習室，這都沒什麼問題，但重點是她都不預約！
+有沒有位子坐全憑運氣，可以不要這麼隨性嗎？而且聽說還會幫同學整理段考知識，實在是太善良了啦
+            `}
             imgSrc="/images/team/fgisc/pay_pay.jpg"
           />
           <Person
             role="學術 & 文書"
             name="月"
             tags="時瘋時靜, 街舞, CriminalzCrew/LesTwins"
-            description={Placeholder()}
+            description={`
+非常會彈吉他！幹介上的照片都是他抱著吉他的圖！還是吉他社的地社成員呢！
+
+除此之外他也很喜歡街舞，曾為了看別人跳街舞跑去北車等了一個下午
+
+據說他還有雙重人格，上一秒可能還很安靜，下一秒就熱情地抱著你了
+            `}
             imgSrc="/images/team/fgisc/moon_g.jpg"
           />
           <Person
             role="文書長"
             name="鏡"
             tags="晴鏡之好, 畫畫大神, 秒回"
-            description={Placeholder()}
+            description={`
+小鏡～小鏡～多麼特別的名字呀！第一次聽到我還以為這是暱稱，沒想到這是本名呢！
+具她說法，她的家長希望她能成為一個能夠看清別人的人，就像一面鏡子，映照出人們最真實的一面
+            `}
             imgSrc="/images/team/fgisc/little_mirror.jpeg"
           />
           <Person
             role="文書"
             name="烤企鵝"
             tags="改名, 蒸煮炒炸企鵝, 本名難唸"
-            description={Placeholder()}
+            description={`
+有沒有發現烤企鵝的綽號跟企鵝很像？其實原本兩位都叫「企鵝」，學姊為了區分於是出現了「謝姓企鵝」這個綽號，
+但烤企鵝覺得這樣不好玩，所以他在蒸煮炒炸中選擇了烤，於是成為了烤企鵝
+            `}
             imgSrc="/images/team/fgisc/fried_pen.jpg"
           />
           <Person
             role="公關長"
             name="芸"
             tags="超瘦, 大吃貨, 咪"
-            description={Placeholder()}
+            description={`
+她所收到的幹介投稿有半數以上都無繞著食物，看來我們的公關長是個超級護食的大吃或呢！
+
+不只這樣，她還會自己做甜點！聽說很好吃我也要吃啦！
+最最最誇張的是，湘芸小朋友都吃不胖，反而越吃越瘦，太羨慕啦
+            `}
             imgSrc="/images/team/fgisc/grass_cloud.jpg"
           />
           <Person
             role="公關"
             name="鳳梨"
             tags="傳說成癮者, 滷肉飯, 社牛"
-            description={Placeholder()}
+            description={`
+鳳梨也是一位非常熱情的幹部，跟她聊天絕不會冷場，而且她也是一名傳說重度成癮者，
+聽說她最近在努力戒傳說，但似乎沒有很成功……
+似乎前陣子瘋迷到下課打、上課打、放學打、半夜上線也在打。
+            `}
             imgSrc="/images/team/fgisc/air_pineapple.jpeg"
           />
           <Person
             role="總務"
             name="祖先"
             tags="霸氣的綽號, 不吃水果, 運動健將"
-            description={Placeholder()}
+            description={`
+一位極度挑食的同學，他竟然不吃任何水果，甚至因此自然小考不及格，因為那單元剛好在考各種植物的種子及果實形狀等等
+
+另外，他也是一位極限運動大師，假日時經常可以聽到她去玩滑板、衝浪、滑水等，實在太酷啦！
+            `}
             imgSrc="/images/team/fgisc/group_primis.png"
           />
         </TeamContainer>
