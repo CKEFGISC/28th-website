@@ -44,7 +44,7 @@ export default function Museum() {
         <MuseumItem imgSrc="/images/museum/28th_website.png" alt="28th website">
           <TitleLink url="/">28<Up>th</Up> 社網</TitleLink>
           <p>
-            鹽亞倫大電神架好了 27<Up>th</Up> 社網，好強。接著換 28<Up>th</Up> 上幹了，某晴星星決定重頭寫自己的社網。
+            鹽亞倫大電神架好了 27<Up>th</Up> 社網，好強。接著換 28<Up>th</Up> 上幹了，網管 晴 決定重頭寫自己的社網。
           </p>
           <p>
             雖然有學長姊的範本可以借鑑，不過因為他是笨，花了大半個暑假也沒有什麼進度。

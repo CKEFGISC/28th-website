@@ -17,8 +17,8 @@ export default function Footer() {
           brandName="instagram"
         />
         <Brand 
-          title="建北電資 28th GitHub"
-          href="https://github.com/ckefgisc-28th/"
+          title="本站 GitHub 頁面"
+          href="https://github.com/ckefgisc-28th/ckefgisc-28th.github.io"
           brandName="github"
         />
         <Brand 

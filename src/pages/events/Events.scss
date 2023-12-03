@@ -102,6 +102,7 @@
 @media only screen and (max-width: 536px) {
   .events-page-section img {
     width: 360px;
+    max-width: 90dvw;
   }
 
   .events-page-section h4 {
@@ -118,6 +119,7 @@
 @media only screen and (max-width: 450px) {
   .events-page-section h4 {
     left: 32px;
+    font-size: 0.8em;
   }
 }
 
@@ -126,3 +128,4 @@
     left: 12px;
   }
 }
+

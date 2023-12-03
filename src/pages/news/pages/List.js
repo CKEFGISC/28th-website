@@ -7,6 +7,7 @@ import { switchPageAnimation } from "../../../utils/Page";
 
 import contentPath from "../content.md";
 import { useNavigate } from "react-router-dom";
+import Markdown from "../../../utils/Remarkable";
 
 function handle(textContent, setText, goTo) {
   var rawNews = textContent.split("<%-== next ==-%>");
@@ -25,7 +26,7 @@ function handle(textContent, setText, goTo) {
 
     news.push(<React.Fragment key={`news-${i}`}>
       <h3 style={{ cursor: "pointer" }} onClick={() => goTo(`${i}`)}>
-        <span className="opacity-50">{`#${i}`}</span>&nbsp;{title}
+        <span className="opacity-50">{`#${i}`}</span>&nbsp;<Markdown content={title} inline={true} />
       </h3>
       <hr />
     </React.Fragment>);

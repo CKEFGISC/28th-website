@@ -65,6 +65,10 @@
   margin-bottom: 1.2rem;
 }
 
+.markdown.inline p {
+  margin-bottom: 0;
+}
+
 // .markdown a {
 //   text-decoration: underline;
 //   text-underline-offset: 2px;

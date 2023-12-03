@@ -1,6 +1,8 @@
 import { Remarkable } from "remarkable";
 import rkatex from "remarkable-katex";
+import $ from "jquery"
 
+import React from "react";
 import "./Remarkable.scss";
 
 var md = new Remarkable({
@@ -14,5 +16,22 @@ md.use(rkatex);
 export default function Markdown(props) {
   const content = props.content || props.source || props.children || "";
 
-  return <div className="markdown" dangerouslySetInnerHTML={{ __html: md.render(content) }} ></div>
+  React.useEffect(() => {
+    $(() => {
+      $(".markdown").find("a").attr("target", "_blank").attr("rel", "noreferrer");
+    });
+  }, []);
+
+  return props.inline ? (
+    <span
+      className="markdown inline" 
+      style={{ display: "inline-block" }}
+      dangerouslySetInnerHTML={{ __html: md.render(content) }}
+    ></span>
+  ) : (
+    <div 
+      className="markdown" 
+      dangerouslySetInnerHTML={{ __html: md.render(content) }}
+    ></div>
+  );
 }

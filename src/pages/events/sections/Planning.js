@@ -15,7 +15,7 @@ export default function Planning() {
         />
         <EventIntro
           imgSrc={null}
-          imgText="2024 (?) 聯合社友會"
+          imgText="2023 聯合社友會"
           title="社友會"
           time="未定"
           description="建國中學電子計算機研習社社慶每三年舉辦一次，邀請大學長姐們回到社團，與學弟妹們互相認識，重溫高中兩年的社團時光。"

@@ -34,7 +34,7 @@ export default function Alive() {
           description="建北電資聯合暑訓，簡稱暑訓。這個活動是幹部接幹後辦的第一個大型活動，更是附有讓學弟妹認識我們的任務。活動內教授基本資訊技能、程式語言等，也安排許多增進感情的活動。現今英文名稱 Summer Camp 取自夏令營，代表了暑訓的可玩性。以前暑訓曾被稱為 Summer Train，更有訓練之意涵。"
         />
         <EventIntro
-          imgSrc={null}
+          imgSrc="/images/events/new.jpg"
           imgText="2023 聯合迎新"
           title="迎新"
           time="九月"
