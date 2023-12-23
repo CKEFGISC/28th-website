@@ -1,6 +1,6 @@
 # 建北電資 28<sup><small>th</small></sup> 測試版社網上線
 
-版本號：Snapshot-23w48b (Pre-1.0.4)
+版本號：Snapshot-23w51a (Pre-1.1.0)
 
 你可能發現 Header 左上角的 Icon 是有動畫的；嘗試過按 Footer 右下角的 `i` 關於本站 按鈕，發現是一個釣魚連結
 

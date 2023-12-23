@@ -6,7 +6,7 @@ import SectionTitle from "../../../utils/SectionTitle";
 import Loading from "../../../utils/Loading";
 import Markdown from "../../../utils/Remarkable";
 
-import contentPath from "./About.md";
+import contentPath from "./about.md";
 
 export default function About() {
   const [ text, setText ] = React.useState();

@@ -2,7 +2,7 @@
 .markdown blockquote {
   display: flex;
 }
-.markdown blockquote > p {
+.markdown blockquote > p:is(:last-child) {
   margin-bottom: 0;
 }
 .markdown blockquote::before {
