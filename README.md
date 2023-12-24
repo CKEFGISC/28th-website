@@ -1,6 +1,6 @@
 # 建北電資 28th 社網
 
-[ckefgisc-28th.github.io](https://ckefgisc-28th.github.io/) / [28th.ckefgisc.org](https://28th.ckefgisc.org/)
+[ckefgisc-28th.github.io](https://ckefgisc.github.io/28th-website/#/) / [28th.ckefgisc.org](https://ckefgisc.org/#/)
 
 Made by 建北電資 28th 社網製作團隊
 
