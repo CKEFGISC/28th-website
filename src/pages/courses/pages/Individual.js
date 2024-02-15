@@ -71,9 +71,11 @@ function setContent(index, view, textContent, setText, setSlides) {
       "game_design": <>
         <h4 id="pico-8">Pico-8</h4>
         <Slides url="https://slides.com/star_huey/game/" />
-        <h4 id="u1">Unity: 1 細說遊戲物件 & 2 讓角色動起來</h4>
+        <h4 id="u0">Unity: 0. Unity基本介紹及初始準備</h4>
+        <Slides url="https://slides.com/mhyang/43s_unity_class-0/" />
+        <h4 id="u12">Unity: 1. 細說遊戲物件 & 2. 讓角色動起來</h4>
         <Slides url="https://slides.com/mhyang/43s_unity_class-1and2/" />
-        <h4 id="u2">Unity: 3 基礎物理系統 & 4 簡易平台遊戲製作</h4>
+        <h4 id="u34">Unity: 3. 基礎物理系統 & 4. 簡易平台遊戲製作</h4>
         <Slides url="https://slides.com/mhyang/43s_unity_class-3and4/" />
       </>,
       "blender": <>
@@ -93,9 +95,9 @@ function setContent(index, view, textContent, setText, setSlides) {
         <Slides url="https://slides.com/d11131634/deck/" />
         <h4 id="eighth">方形小屋 (3)</h4>
         <Slides url="https://slides.com/d11131634/deck-573baa/" />
-        <h4 id="nineth">方形小屋 (3?)</h4>
+        <h4 id="nineth">方形小屋 (4)</h4>
         <Slides url="https://slides.com/d11131634/deck-6ae291/" />
-        <h4 id="tenth">方形小屋 (4)</h4>
+        <h4 id="tenth">方形小屋 (5)</h4>
         <Slides url="https://slides.com/d11131634/deck-8cfa5c/" />
       </>,
       "algorithm": <>
@@ -109,13 +111,13 @@ function setContent(index, view, textContent, setText, setSlides) {
         <Slides url="https://slides.com/ganyumywife/algo-3/" />
         <h4 id="fifth">演算法 1 - 枚舉、貪婪、二分搜 & 分治</h4>
         <Slides url="https://slides.com/cjtsai/algo-basic/" />
-        <h4 id="fifth">DP</h4>
+        <h4 id="sixth">DP</h4>
         <Slides url="https://slides.com/ckeisc807/dynamic-programming0/" />
-        <h4 id="fifth">圖論（一）</h4>
+        <h4 id="seventh">圖論（一）</h4>
         <Slides url="https://slides.com/sea_of_voices/graph-theory0/" />
-        <h4 id="fifth">圖論（二）</h4>
+        <h4 id="eighth">圖論（二）</h4>
         <Slides url="https://slides.com/sea_of_voices/graph-theory1/" />
-        <h4 id="fifth">小社賽題解</h4>
+        <h4 id="tenth">小社賽題解</h4>
         <Slides url="https://slides.com/ckefgisc28th/contest/" />
       </>
     }
