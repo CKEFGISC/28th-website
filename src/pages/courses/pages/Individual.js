@@ -43,8 +43,8 @@ function setContent(index, view, textContent, setText, setSlides) {
         <Slides url="https://slides.com/sixbro/web-4/" />
         <h4 id="fifth">JavaScript</h4>
         <Slides url="https://slides.com/star_huey/web_js/" />
-        <h4 id="sixth">JavaScript 2</h4>
-        <Slides url="https://slides.com/star_huey/web_js_2/" />
+        <h4 id="sixth">Github Pages</h4>
+        <Slides url="https://slides.com/star_huey/github_pages/" />
       </>,
       "python": <>
         <h4 id="first">Python 簡介</h4>
@@ -59,22 +59,44 @@ function setContent(index, view, textContent, setText, setSlides) {
         <Slides url="https://slides.com/ykchiu/python-oop/fullscreen#/python-5-oop-and-module/" />
         <h4 id="sixth">File IO</h4>
         <Slides url="https://slides.com/ck1110793/python_file_io/" />
+        <h4 id="seventh">爬蟲（一）</h4>
+        <Slides url="https://slides.com/ykchiu/python-7-web_crawler_part_i/" />
+        <h4 id="eighth">Selenium</h4>
+        <Slides url="https://slides.com/ck1110793/python_selenium/" />
+        <h4 id="nineth">GUI</h4>
+        <Slides url="https://slides.com/ykchiu/python-gui/" />
+        <h4 id="tenth">PyAutoGUI & Turtle</h4>
+        <Slides url="https://slides.com/ck1110793/python-10/" />
       </>,
       "game_design": <>
         <h4 id="pico-8">Pico-8</h4>
         <Slides url="https://slides.com/star_huey/game/" />
+        <h4 id="u1">Unity: 1 細說遊戲物件 & 2 讓角色動起來</h4>
+        <Slides url="https://slides.com/mhyang/43s_unity_class-1and2/" />
+        <h4 id="u2">Unity: 3 基礎物理系統 & 4 簡易平台遊戲製作</h4>
+        <Slides url="https://slides.com/mhyang/43s_unity_class-3and4/" />
       </>,
       "blender": <>
-        <h4 id="first">Blender 1</h4>
+        <h4 id="first">About Blender</h4>
         <Slides url="https://slides.com/stella-a/deck/" />
-        <h4 id="second">Blender 2</h4>
+        <h4 id="second">渲染、材質 & 粒子</h4>
         <Slides url="https://slides.com/ck1110835/blender02/" />
-        <h4 id="third">Blender 3</h4>
+        <h4 id="third">隨機材質 & 貼圖</h4>
         <Slides url="https://slides.com/stella-a/deck-f81f94/" />
-        <h4 id="fourth">Blender 4</h4>
+        <h4 id="fourth">杯子</h4>
         <Slides url="https://slides.com/ck1110835/blender/" />
-        <h4 id="fifth">Blender 5</h4>
+        <h4 id="fifth">方形小屋</h4>
         <Slides url="https://slides.com/stella-a/deck-4a3712/" />
+        <h4 id="sixth">方形小屋 (1)</h4>
+        <Slides url="https://slides.com/stella-a/deck-bd56c3/" />
+        <h4 id="seventh">方形小屋 (2)</h4>
+        <Slides url="https://slides.com/d11131634/deck/" />
+        <h4 id="eighth">方形小屋 (3)</h4>
+        <Slides url="https://slides.com/d11131634/deck-573baa/" />
+        <h4 id="nineth">方形小屋 (3?)</h4>
+        <Slides url="https://slides.com/d11131634/deck-6ae291/" />
+        <h4 id="tenth">方形小屋 (4)</h4>
+        <Slides url="https://slides.com/d11131634/deck-8cfa5c/" />
       </>,
       "algorithm": <>
         <h4 id="first">C++ 語法 1</h4>
@@ -87,6 +109,14 @@ function setContent(index, view, textContent, setText, setSlides) {
         <Slides url="https://slides.com/ganyumywife/algo-3/" />
         <h4 id="fifth">演算法 1 - 枚舉、貪婪、二分搜 & 分治</h4>
         <Slides url="https://slides.com/cjtsai/algo-basic/" />
+        <h4 id="fifth">DP</h4>
+        <Slides url="https://slides.com/ckeisc807/dynamic-programming0/" />
+        <h4 id="fifth">圖論（一）</h4>
+        <Slides url="https://slides.com/sea_of_voices/graph-theory0/" />
+        <h4 id="fifth">圖論（二）</h4>
+        <Slides url="https://slides.com/sea_of_voices/graph-theory1/" />
+        <h4 id="fifth">小社賽題解</h4>
+        <Slides url="https://slides.com/ckefgisc28th/contest/" />
       </>
     }
 
