@@ -14,7 +14,7 @@ export default function CTF() {
       case "chRDQdoVAx4J3sEYt7qPTICe": // bclai
         return "Ck3F6i$C-Ma2E024-[1]{MInEcrAF7-iS-a-c0o1-6AMe-t0-pl@y}";
 
-      case "aiDWsN87hztRkXrKDW1RKZts": // algorithm image
+      case "aiDWsN87hztRkXrKDW1RKZts": // algorithm title
         return "Ck3F6i$C-Ma2E024-[2]{whY-aRE-y0U-$O-d1AN-?-1-Io5E-4lL}";
 
       case "wbCHG99tMIHxQGMRovgnJ8lI": // fgisc star
