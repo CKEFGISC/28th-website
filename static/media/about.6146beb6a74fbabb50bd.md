@@ -56,7 +56,7 @@
 - #### 社徽 ── 小弗星
 
   <div class="chicken-container d-flex">
-    <img src="/images/fgisc_star.png" style="width: 180px; flex-shrink: 0; padding: 20px; margin-right: 55px;" alt="FGISC Star" />
+    <img src="/images/fgisc_star.png" style="width: 180px; flex-shrink: 0; padding: 20px; margin-right: 55px;" alt="FGISC Star" onclick="window.location.assign('/#/ctf/wbCHG99tMIHxQGMRovgnJ8lI/')" />
     <span>
       極富創意及意義的社徽，把英文社名縮寫 FGISC 化為星星和月亮，此標誌被稱為弗基斯特星座、簡稱小弗星
     </span>
