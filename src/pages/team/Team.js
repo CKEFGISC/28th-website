@@ -331,6 +331,7 @@ Secant 是標準建中猴的代表，例如他曾經把北一女點餐機的 Win
 他的生存之道就一個字「懶」，不管是什麼時候基本都可以看到他在睡覺，而問他問題得到的回覆大多數都是我懶，真心覺得樹懶這個綽號可能比較適合他。
             `}
             imgSrc="/images/team/ckeisc/j_mo.png"
+            onClick={() => window.location.assign("/#/ctf/chRDQdoVAx4J3sEYt7qPTICe/")}
           />
         </TeamContainer>
       </section>
@@ -436,6 +437,7 @@ Secant 是標準建中猴的代表，例如他曾經把北一女點餐機的 Win
 最最最誇張的是，湘芸小朋友都吃不胖，反而越吃越瘦，太羨慕啦
             `}
             imgSrc="/images/team/fgisc/grass_cloud.jpg"
+            onClick={() => window.location.assign("/#/ctf/i4eG2HliYKoCtGlUXvw0SPcP/")}
           />
           <Person
             role="公關"

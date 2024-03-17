@@ -10,7 +10,7 @@ export default function Intro() {
           <Row>
             <div className="col-md-12">
               <h1>建北電資</h1>
-              <h2>一個跨越 28 年的大家庭</h2>
+              <h2>一個跨越 <span onClick={() => window.location.assign("/#/ctf/chRDQdoVAx4J3sEYt7qPTICe/")}>28</span> 年的大家庭</h2>
               <Scroll to="#map" className="btn btn-outline-warning">關於我們</Scroll>
             </div>
           </Row>

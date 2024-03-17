@@ -30,7 +30,7 @@ Blender 是一個免費且開源的三維圖形軟體，讓使用者能夠創建
 
 <%-== next ==-%>
 
-# 演算法
+# <span onclick="window.location.assign('/#/ctf/aiDWsN87hztRkXrKDW1RKZts/')">演算法</span>
 
 講師：807<sup><small>807</small></sup>、世宗、佑佑
 

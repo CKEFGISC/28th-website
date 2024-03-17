@@ -8,7 +8,7 @@ export default function Map() {
   return (
     <section id="map">
       <div className="container">
-        <SectionTitle>網站地圖</SectionTitle>
+        <SectionTitle onClick={() => window.location.assign("/#/ctf/7NhfAxSmXieV6B9ofXHsI2zV")}>網站地圖</SectionTitle>
         <Row>
           <Card 
             useScroll to="#about"

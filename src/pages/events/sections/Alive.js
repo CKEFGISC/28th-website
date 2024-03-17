@@ -11,6 +11,7 @@ export default function Alive() {
           title="春遊"
           time="四～五月"
           description="建北電資聯合春遊，簡稱春遊。這個活動是高一學弟妹的第一個任務，除了體驗幹部生活，也能與同屆增進感情。"
+          onClick={() => window.location.assign("/#/ctf/fAWd2Lwy5A8k1SERUPeNk4qq")}
         />
         <EventIntro
           imgSrc="/images/events/exhibition.jpg"
