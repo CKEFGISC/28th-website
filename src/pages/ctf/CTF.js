@@ -9,7 +9,7 @@ export default function CTF() {
   function getFlagById() {
     switch (id) {
       case "lIA0zmzYSbgSlBUzwjo7hr5y": // footer
-        return "Ck3F6i$C-Ma2E024-[0]{lOL-FlaG5-4rE-h4RD-7o-fiNd-R!ght}"
+        return "Ck3F6i$C-Ma2E024-[0]{lOL-FlaG5-4rE-h4RD-7o-fiNd-R!ght}";
 
       case "chRDQdoVAx4J3sEYt7qPTICe": // bclai
         return "Ck3F6i$C-Ma2E024-[1]{MInEcrAF7-iS-a-c0o1-6AMe-t0-pl@y}";
@@ -18,7 +18,7 @@ export default function CTF() {
         return "Ck3F6i$C-Ma2E024-[2]{whY-aRE-y0U-$O-d1AN-?-1-Io5E-4lL}";
 
       case "wbCHG99tMIHxQGMRovgnJ8lI": // fgisc star
-        return "Ck3F6i$C-Ma2E024-[3]{h3Lp-OuR-c1u8s-6R0W-!t'$-aLl-ON-u}";
+        return "Ck3F6i$C-Ma2E024-[3]{h3Lp-OuR-c1u8-6R0W-!t'$-aLl-ON-u}";
 
       case "IBWKIRrBsCoDkNuXE99MvG5j": // museum title bar
         return "Ck3F6i$C-Ma2E024-[4]{Do-U-Kn0w-WH0-cODEd-th3-wEB$!tE$}";
