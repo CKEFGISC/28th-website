@@ -23,13 +23,21 @@ function setContent(index, view, textContent, setText, setSlides) {
       "game_design": "遊戲設計",
       "blender": "Blender",
       "algorithm": "演算法",
+      "js_and_ts": "JS & TS",
+      "python-2": "進階 Python",
+      "game_develop": "遊戲開發",
+      "algorithm-2": "進階演算法"
     },
     imgSrcs = {
-      "web": "/images/courses/web.avif",
-      "python": "/images/courses/python.jpg",
-      "game_design": "/images/courses/game_design.webp",
-      "blender": "/images/courses/blender.jpg",
-      "algorithm": "/images/courses/algorithm.jpg"
+      "web":          "/images/courses/web.avif",
+      "python":       "/images/courses/python.jpg",
+      "game_design":  "/images/courses/game_design.webp",
+      "blender":      "/images/courses/blender.jpg",
+      "algorithm":    "/images/courses/algorithm.jpg",
+      "js_and_ts":    "/images/courses/js_and_ts.jpg",
+      "python-2":     "/images/courses/python-2.jpg",
+      "game_develop": "/images/courses/game_develop.png",
+      "algorithm-2":  "/images/courses/algorithm-2.webp"
     },
     slides = {
       "web": <>
@@ -119,6 +127,40 @@ function setContent(index, view, textContent, setText, setSlides) {
         <Slides url="https://slides.com/sea_of_voices/graph-theory1/" />
         <h4 id="tenth">小社賽題解</h4>
         <Slides url="https://slides.com/ckefgisc28th/contest/" />
+      </>,
+      "js_and_ts": <>
+        <h4 id="all">全部</h4>
+        <Slides url="https://slides.com/star_huey/js_and_ts/" />      
+      </>,
+      "python-2": <>
+        <h4 id="first">OpenCV</h4>
+        <Slides url="https://slides.com/d11130110/minimal-458a40/" />
+        <h4 id="second">PyVista (上)</h4>
+        <Slides url="https://slides.com/ykvonckhs/pyvista/" />
+        <h4 id="third">PyVista (下)</h4>
+        <Slides url="https://slides.com/ykvonckhs/pyvista2/" />
+      </>,
+      "game_develop": <>
+        <h4 id="u56">Unity 5. Tilemap & 6. Prefab</h4>
+        <Slides url="https://slides.com/mhyang/unity-5and6/" />
+        <h4 id="u7">Unity 7. 淺談 AI 尋路及延伸</h4>
+        <Slides url="https://slides.com/mhyang/unity-7/" />
+        <h4 id="u89">Unity 8. 實用 UI & 9. 場景切換與管理</h4>
+        <Slides url="https://slides.com/mhyang/unity-8and9/" />
+      </>,
+      "algorithm-2": <>
+        <h4 id="first">線段樹</h4>
+        <Slides url="https://slides.com/ckeisc807/segment_tree/" />
+        <h4 id="second">資料結構</h4>
+        <Slides url="https://slides.com/sea_of_voices/data_structure_new/" />
+        <h4 id="third">圖論（三）</h4>
+        <Slides url="https://slides.com/sea_of_voices/graph-theory2/" />
+        <h4 id="fourth">DP（二）</h4>
+        <Slides url="https://slides.com/ckeisc807/copy-of-dynamic-programming/" />
+        <h4 id="fifth">樹論</h4>
+        <Slides url="https://slides.com/cjtsai/tree/" />
+        <h4 id="sixth">計算幾何</h4>
+        <Slides url="https://slides.com/aaw/geometry-15/" />
       </>
     }
 
@@ -162,8 +204,8 @@ function slidesContentsOnScroll(ev) {
 export default function CourseIndividual() {
   const { id: courseId } = useParams();
 
-  const index = [ "web", "python", "game_design", "blender", "algorithm" ].indexOf(courseId);
-  
+  const index = [ "web", "python", "game_design", "blender", "algorithm", "js_and_ts", "python-2", "game_develop", null, "algorithm-2" ].indexOf(courseId);
+
   const [text, setText] = React.useState();
   const [slides, setSlides] = React.useState();
 

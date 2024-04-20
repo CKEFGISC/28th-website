@@ -10,10 +10,10 @@ export default function CourseIntro(props) {
       <span className="description" style={{ marginLeft: "20px" }}>
         <Markdown content={props.content} />
         <a href={"#/courses" + props.href ?? ""}>
-          <button className={`btn btn-${props.btnColor || "primary"} mt-2`} src="?alt=2">
+          {props.href ? <button className={`btn btn-${props.btnColor || "primary"} mt-2`} src="?alt=2">
             查看更多&nbsp;
             <i className="fa-solid fa-arrow-right-long"></i>
-          </button>
+          </button> : ""}
         </a>
       </span>
     </div>

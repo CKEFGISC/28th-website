@@ -69,6 +69,48 @@ export default function CourseList() {
           <div style={{ height: "100dvh" }}></div>
         </>)}
       </div>
+
+      <SectionTitle>112 下</SectionTitle>
+      <div className="container py-1">
+        {text ? (<>
+          <CourseIntro
+            title="JS & TS"
+            imgSrc="/images/courses/js_and_ts.jpg"
+            content={text.split("<%-== next ==-%>")[5]}
+            btnColor="crimson"
+            href="/js_and_ts/"
+          />
+          <CourseIntro
+            title="進階 Python"
+            imgSrc="/images/courses/python-2.jpg"
+            content={text.split("<%-== next ==-%>")[6]}
+            btnColor="gamboge"
+            href="/python-2/"
+          />
+          <CourseIntro
+            title="遊戲開發"
+            imgSrc="/images/courses/game_develop.png"
+            content={text.split("<%-== next ==-%>")[7]}
+            btnColor="success"
+            href="/game_develop/"
+          />
+          <CourseIntro
+            title="彈性時間"
+            imgSrc="/images/courses/tea_time.jpg"
+            content={text.split("<%-== next ==-%>")[8]}
+          />
+          <CourseIntro
+            title="進階演算法"
+            imgSrc="/images/courses/algorithm-2.webp"
+            content={text.split("<%-== next ==-%>")[9]}
+            btnColor="orchid"
+            href="/algorithm-2/"
+          />
+        </>) : (<>
+          <Loading />
+          <div style={{ height: "100dvh" }}></div>
+        </>)}
+      </div>
     </section>
   </>);
 }

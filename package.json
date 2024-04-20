@@ -1,29 +1,22 @@
 {
-  "name": "react-club-website",
+  "name": "react-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://28th.ckefgisc.org/#",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "awesome-typescript-loader": "^5.2.1",
-    "gh-pages": "^6.0.0",
-    "hast-util-raw": "^9.0.0",
+    "gh-pages": "^6.1.1",
     "jquery": "^3.7.1",
-    "katex": "^0.16.9",
+    "katex": "^0.16.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-markdown": "^8.0.7",
-    "react-router-dom": "^6.15.0",
-    "react-scripts": "^5.0.1",
-    "rehype-raw": "^7.0.0",
+    "react-router": "^6.22.3",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "5.0.1",
     "remarkable": "^2.0.1",
     "remarkable-katex": "^1.2.1",
-    "remarkable-react": "^1.4.3",
-    "sass": "^1.66.1",
-    "source-map-loader": "^4.0.1",
+    "sass": "^1.75.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -51,8 +44,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "typescript": "^5.2.2"
   }
 }
