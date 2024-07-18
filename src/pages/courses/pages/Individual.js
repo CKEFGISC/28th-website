@@ -161,6 +161,12 @@ function setContent(index, view, textContent, setText, setSlides) {
         <Slides url="https://slides.com/cjtsai/tree/" />
         <h4 id="sixth">計算幾何</h4>
         <Slides url="https://slides.com/aaw/geometry-15/" />
+        <h4 id="seventh">字串</h4>
+        <Slides url="https://slides.com/cjtsai/string" />
+        <h4 id="eighth">數論</h4>
+        <Slides url="https://slides.com/lemonilemon/copy-of" />
+        <h4 id="ninth">補坑</h4>
+        <Slides url="https://slides.com/cjtsai/misc" />
       </>
     }
 
